@@ -2,13 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-.container{
+
+// Font Face
+
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("../src/assets/fonts/neue-montreal/NeueMontreal-Light.otf")
+    format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("../src/assets/fonts/neue-montreal/NeueMontreal-LightItalic.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("../src/assets/fonts/neue-montreal/NeueMontreal-Regular.otf")
+    format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("../src/assets/fonts/neue-montreal/NeueMontreal-Medium.otf")
+    format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("../src/assets/fonts/neue-montreal/NeueMontreal-MediumItalic.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("../src/assets/fonts/neue-montreal/NeueMontreal-Bold.otf")
+    format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("../src/assets/fonts/neue-montreal/NeueMontreal-BoldItalic.otf")
+  format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+*{
+  font-family: "NeueMontreal";
+}
+
+
+.container {
   @apply mx-auto px-4 md:px-6 lg:px-8 xl:px-12;
 }
 
-.items-center{
+.items-center {
   @apply flex;
 }
-.justify-between{
+
+.justify-between {
   @apply flex items-center;
 }
