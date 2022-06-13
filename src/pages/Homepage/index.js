@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../../components/Navbar'
 import { selected } from "../../assets/images";
 import { SelectedWork } from '../../components/SelectedWorks';
+import About from './About';
 
 const Homepage = () => {
   const SelectedArray = [
@@ -77,7 +78,7 @@ const Homepage = () => {
 
       <main>
         {/* Selected Works */}
-        <section className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
+        <section className='grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-10'>
           {
             SelectedArray.map((item,num) => {
               return (
@@ -88,6 +89,7 @@ const Homepage = () => {
 
         </section>
         {/* End of Selected Works */}
+        <About />
       </main>
     </div>
   )
