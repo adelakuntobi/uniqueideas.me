@@ -3,8 +3,8 @@ import Logo from "../../assets/images/logo.svg"
 
 const Navbar = () => {
   return (
-    <nav className="w-full container !px-0 shadow-lg bg-black bg-opacity-60">
-      <div className="py-8 justify-between fixed top-0 w-full container !px-0 shadow-lg bg-black bg-opacity-60">
+    <nav className="w-full container !px-0 shadow-lg bg-black bg-opacity-60 sticky top-0 ">
+      <div className="py-8 justify-between  container !px-0 shadow-lg bg-black bg-opacity-60">
         <img src={Logo} alt="" />
         <ul className="justify-between gap-12">
           <li className="cursor-pointer uppercase active">Home</li>

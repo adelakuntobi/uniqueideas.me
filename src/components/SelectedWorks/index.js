@@ -9,7 +9,7 @@ export const TitleHeading = styled.h3`
   line-height: 27px;
   color: #D1E2C0;
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 `;
 
 export const SelectedWork = ( props ) => {
