@@ -5,6 +5,7 @@ import { SelectedWork, TitleHeading } from '../../components/SelectedWorks';
 import About from './About';
 import styled from 'styled-components';
 import Footer from '../../components/Footer';
+import Experience from './Experience';
 
 
 const HeaderDiv = styled.header`
@@ -14,8 +15,8 @@ const HeaderDiv = styled.header`
 const ReadyToWork = styled.header`
   border-top: 1px solid #6B7280;
   /* border-bottom: 1px solid #6B7280; */
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 `;
 
 
@@ -111,6 +112,8 @@ const Homepage = () => {
 
 
         <About />
+
+        <Experience />
 
         {/* Lets get to work */}
         <ReadyToWork className='items-center flex-col'>
