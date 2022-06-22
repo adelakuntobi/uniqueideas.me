@@ -1,15 +1,20 @@
 // import logo from './logo.svg';
 import { Route, Routes } from 'react-router-dom';
 import './App.scss';
-import ViewSelected from './components/ViewSelelected';
+
 import Homepage from './pages/Homepage';
+import BervHome from './pages/Works/BervHome';
+import Stephar from './pages/Works/Stephar';
+import ScrollToTop from './utils/ScrollToTop';
 
 function App() {
   return (
     <div className="App">
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="selected" element={<ViewSelected />} />
+        <Route path="/works/stephar" element={<Stephar />} />
+        <Route path="/works/bervhome" element={<BervHome />} />
       </Routes>
     </div>
   );

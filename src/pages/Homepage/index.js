@@ -24,19 +24,21 @@ const Homepage = () => {
   const SelectedArray = [
     {
       img: selected,
-      title: "Testing Header",
+      title: "Dress Measurement",
+      route: "dress",
       desc: [
         "Research",
-        "Innovative",
+        "Strategy",
         "Design"
       ]
     },
     {
       img: selected,
-      title: "Testing Header",
+      title: "BervHome Tests",
+      route: "bervhome",
       desc: [
         "Research",
-        "Innovative",
+        "Strategy",
         "Design"
       ]
     },
@@ -102,7 +104,19 @@ const Homepage = () => {
             {
               SelectedArray.map((item, num) => {
                 return (
-                  <SelectedWork key={num} name={item.title} img={item.img} desc={item.desc} />
+                  <SelectedWork key={num} name={item.title} img={item.img} desc={item.desc} route={item.route} />
+                )
+              })
+            }
+          </div>
+        </section>
+        <section className='border-t border-b py-12' style={{ borderColor: "#374151" }}>
+          <TitleHeading>Branding</TitleHeading>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-10'>
+            {
+              SelectedArray.map((item, num) => {
+                return (
+                  <SelectedWork key={num} name={item.title} img={item.img} desc={item.desc} route={item.route} />
                 )
               })
             }

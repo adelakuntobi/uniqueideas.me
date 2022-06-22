@@ -1,18 +1,24 @@
 import Navbar from "../Navbar";
 
 // images
-import StepharBG from "../../assets/images/stepharBg.svg"
-import Landing from "../../assets/images/stepharlanding.svg"
-import Chart from "../../assets/images/chart.svg"
-import Wireframe from "../../assets/images/wireframe.png"
+import StepharBG from "../../assets/images/stephar/bg.svg"
+import Landing from "../../assets/images/stephar/landing.svg"
+import Chart from "../../assets/images/stephar/chart.svg"
+import Wireframe from "../../assets/images/stephar/wireframe.png"
 
+import Interface1 from "../../assets/images/stephar/interface1.svg"
+import Interface2 from "../../assets/images/stephar/interface2.svg"
+import Interface3 from "../../assets/images/stephar/interface3.svg"
+import Interface4 from "../../assets/images/stephar/interface4.svg"
+import Interface5 from "../../assets/images/stephar/interface5.svg"
+
+// Styled Components
 import styled from "styled-components";
 
 export default function ViewSelected() {
   return (
     <div>
       <Navbar />
-
       <div className="container my-5">
         <div className="mb-12">
           <h2 className="font-bold text-4xl lg:text-5xl mb-8">Stephar</h2>
@@ -62,7 +68,7 @@ export default function ViewSelected() {
         </div>
 
         <img src={Chart} className="w-full my-10 text" alt="" />
-        <DivWithHeading className=" !max-w-4xl">
+        <DivWithHeading className="">
           <h3>Wireframes</h3>
           <p>
             A users first impression is formed typically within the first 50 milliseconds of encountering a product. In today’s competitive market, strong visual design is a key differentiator for the user.
@@ -71,7 +77,34 @@ export default function ViewSelected() {
             I focused primarily on creating a simple to use yet intuitive interface that accomodates all the key features of Stephar.
           </p>
         </DivWithHeading>
-        <img src={Wireframe} alt="" className="w-full" />
+        <img src={Wireframe} alt="" className="w-full my-10" />
+        <DivWithHeading>
+          <h3>App Interface</h3>
+          <p>
+            Choosing a dashboard approach helped in ensuring every core function of the app was reachable in a glance.
+          </p>
+          <p>
+            The dashboard helps you easily access recent occurences by showing an overview while accomodating drops and their current status, all projects sorted into their respective categories and blockchain, drop updates sortable by status and date and a full blown out page containing resources that would help everyone get started
+          </p>
+        </DivWithHeading>
+
+        <div className="flex flex-col gap-6 my-10">
+          <img src={Interface1} alt="" />
+          <img src={Interface2} alt="" />
+          <img src={Interface3} alt="" />
+          <img src={Interface4} alt="" />
+          <img src={Interface5} alt="" />
+        </div>
+
+        <DivWithHeading className="mt-40">
+          <h3>Outcome</h3>
+          <p>After successful completion of the interface for Stephar, a usability test was conducted with five participants. While most feedback received was  positive, we are still constantly iterating to ensure best experience for our users while keeping the business goal at the forefront of our thoughts.</p>
+        </DivWithHeading>
+
+        <NextDiv>
+          <p>Next</p>
+          <h4>Fintech Platform</h4>
+        </NextDiv>
       </div>
     </div>
   )
@@ -79,8 +112,9 @@ export default function ViewSelected() {
 
 
 const DivWithHeading = styled.div`
-  max-width: 48rem;
-  margin: auto;
+  max-width: 772px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   h3{
@@ -113,4 +147,20 @@ const DivWithHeading = styled.div`
   margin-bottom: 0.75rem;
     }
    }	
+`;
+
+export const NextDiv = styled.div`
+text-align: center;
+margin: 4rem 0;
+  p{
+    font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-transform: uppercase;
+  }
+h4{
+  font-weight: 700;
+font-size: 48px;
+line-height: 58px;
+}
 `;
