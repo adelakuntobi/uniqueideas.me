@@ -121,6 +121,16 @@ export default function BervHome() {
         <h3 className="text-center">User Persona</h3>
         <img src={architecture} alt=""  className="w-full"/>
       </DivWithHeading>
+      <DivWithHeading className=" !max-w-5xl mx-auto">
+        <h3 className="text-center">Wireframes</h3>
+        <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        {[...Array(12)].map((x, i) =>
+          <img
+            src={require(`../../assets/images/bervHome/wireframe${i + 2}.svg`)}
+            alt="" key={i + 1} className="w-full" />
+        )}
+      </div>
+      </DivWithHeading>
 
 
 
