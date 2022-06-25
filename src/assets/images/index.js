@@ -15,11 +15,19 @@ import StephInterface4 from "./stephar/interface4.svg"
 import StephInterface5 from "./stephar/interface5.svg"
 
 
+// BervHome
+import BervHomeBG from "./bervHome/bg.svg"
+import iCliniq from "./bervHome/icliniq.svg"
+import labbox from "./bervHome/labbox.svg"
+import letsgetchecked from "./bervHome/letsgetchecked.svg"
+import practo from "./bervHome/practo.svg"
+import cult from "./bervHome/cult.svg"
+import workflow from "./bervHome/workflow.svg"
+import architecture from "./bervHome/architecture.svg"
+
+
 export {
   selected, 
-  
-  
-  
   
   StepharBG,
   Landing,
@@ -30,4 +38,15 @@ export {
   StephInterface3,
   StephInterface4,
   StephInterface5,
+
+
+  BervHomeBG,
+  iCliniq,
+  labbox,
+  letsgetchecked,
+  practo,
+  cult,
+  workflow,
+  architecture
+  
 };

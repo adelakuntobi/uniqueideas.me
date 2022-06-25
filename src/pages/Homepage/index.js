@@ -88,7 +88,7 @@ const Homepage = () => {
           <h1 className='text-5xl font-bold'>Passionately designing thoughtful, intuitive, and delightful experiences for all human.</h1>
           <p className='text-primary'>
             Hi, my name is{" "}
-            <span className='text-white uppercase'>Ify</span>.
+            <span className='font-medium uppercase'>Ify</span>.
             <br />
             A product designer passionate about solving complex issues by designing user-friendly digital products and
             web experiences.</p>

@@ -1,43 +1,33 @@
 
 // images
-import StepharBG from "../../assets/images/stephar/bg.svg"
-import Landing from "../../assets/images/stephar/landing.svg"
-import Chart from "../../assets/images/stephar/chart.svg"
-import Wireframe from "../../assets/images/stephar/wireframe.png"
+import {
+  BervHomeBG,
+  cult, iCliniq,
+   labbox, letsgetchecked,
+  practo, workflow, architecture,
+} from "../../assets/images"
 
-import Interface1 from "../../assets/images/stephar/interface1.svg"
-import Interface2 from "../../assets/images/stephar/interface2.svg"
-import Interface3 from "../../assets/images/stephar/interface3.svg"
-import Interface4 from "../../assets/images/stephar/interface4.svg"
-import Interface5 from "../../assets/images/stephar/interface5.svg"
+// React Icons
+import { BiSearch } from "react-icons/bi"
+import { TbBriefcase, TbUserCircle } from "react-icons/tb"
 
 import Layout, { DivWithHeading, MyRole } from "./Layout";
 
 export default function BervHome() {
   return (
     <Layout
-      title="BervHome"
-      banner={StepharBG}
+      title="BervHome Tests"
+      banner={BervHomeBG}
       next="Fintech platform">
 
       {/* About Section */}
-      <DivWithHeading>
-        <h3>About Stephar</h3>
+      <DivWithHeading className="my-6">
+        <h3>About BervHome Test</h3>
         <p>
-          In 2021, non - fungible tokens and the metaverse became a huge topic. NFT marketplaces like opensea,
-          rarible, and the likes received a lot of traffic as more people became interested in the new NFT &
-          metaverse hype.
+          <b>BervHomeTests</b> is an impactful health innovation granting people access to easier analysis of health conditions without having them wait through long queues. At home laboratory testing is clearly private and convenient and have proven to be reliable. One can have series of important tests without leaving the comfort of their home.
         </p>
         <p>
-          While there’s a large number of NFTs introduced into the market daily,
-          it has become very difficult to stay up to date and keep track of things.
-        </p>
-        <p>
-          That’s where Stephar comes in
-        </p>
-        <p>
-          Stephar helps you learn about NFTC and metaverse drops and keeps you updated on biggest NFT
-          projects, live news feeds, top collections, analytics and statistics.
+          Here, BervHomeTests sends an expert team will get to you at a pre-scheduled time, conduct the test and avail the results within a timeframe of 24-48 hours.
         </p>
       </DivWithHeading>
       <MyRole>
@@ -45,59 +35,94 @@ export default function BervHome() {
         <ul>
           <li>User Reasearch</li>
           <li>Product Strategy</li>
-          <li>Visual Design</li>
+          <li>Interface Design</li>
+          <li>Branding</li>
         </ul>
       </MyRole>
       <div className="my-12">
-        <img src={Landing} className="w-full mb-6" alt="" />
+
         <DivWithHeading>
-          <h3>The Challenge</h3>
-          <p>
+          <h3 className="flex items-center gap-4">
+            <div className=" w-9 h-9 grid place-items-center bg-white rounded-full">
+              <BiSearch className="text-black text-xl" />
+            </div>
+            Why BervHomeTests?</h3>
+          <p className=" !leading-10 lg:!mb-8">
             Since 2021 when NFTs and the metaverse became widely adopted, there has been a large entrance of creators and buyers. Sometimes, one would only hear about an NFT project with a unique offering after its minting price becomes really expensive.
           </p>
-          <p>
+          <p className=" !leading-10">
             Since there’s a lot of marketplace for these NFTs and metaverse projects, its become more difficult to stay updated with recent information as users will have to sort through several platforms to accumulate information.
           </p>
         </DivWithHeading>
         <DivWithHeading>
-          <h3>The Solution</h3>
-          <p>
-            Having the information you seek all organised in one place is a big flex. Having these information sent to your mailbox is just simply amazing.
-          </p>
-          <p>
-            Stephar has designed a platform that caters for this need. Users get to access all relevant updates and data informed analytics about NFTs and  the metaverse all in one place.
-          </p>
+          <h3>Design Strategy and Solution</h3>
+          <div className="flex items-start gap-6 mb-8 mt-6">
+            <div className=" h-16 w-16 p-4 grid place-items-center rounded-full" style={{ backgroundColor: "#FEF3C7" }}>
+              <TbBriefcase className="text-black text-3xl" />
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4 mt-2 text-2xl">Business Goals</h4>
+              <p>In a world of complexities and constant thrive, being in a perfect state of health is top priority. Berv Diagnostics Center aims to help you actualize your health goals without hassle by providing health sustaining facilities to you at the comfort of your home. The aim is to help you live healthier for longer.</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-6">
+            <div className=" h-16 w-16 p-4 grid place-items-center rounded-full" style={{ backgroundColor: "#FEF3C7" }}>
+              <TbUserCircle className="text-black text-3xl" />
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4 mt-2 text-2xl">User Goals</h4>
+              <p>Health is wealtth. We all hate to fall ill but its difficult to just randomly visit a diagnostic center when I feel i’m in perfect health condition because its difficult to get anything done there. Imagine having to wait through lots of people just to confirm my blood group.
+              </p>
+              <p>
+                I want to perfectly understand my body so I can be in more control and make decisions that will be best for me medically.</p>
+            </div>
+          </div>
+
         </DivWithHeading>
       </div>
 
-      <img src={Chart} className="w-full my-10 text" alt="" />
+
       <DivWithHeading className="">
-        <h3>Wireframes</h3>
+        <h3>Target Audience</h3>
         <p>
-          A users first impression is formed typically within the first 50 milliseconds of encountering a product. In today’s competitive market, strong visual design is a key differentiator for the user.
+          <b>BervHome Tests</b> is primariliy focused on three major stakeholders in the health sector;  the patient, the lab centers, the doctors. BervHomeTest is creating an innovation that promotes good health by making all that humanity needs to keep their body in check  like home visit lab tests and access to professional doctors available. </p>
+      </DivWithHeading>
+      <DivWithHeading className="">
+        <h3>Market and Competitive Analysis</h3>
+        <p className="!mb-10">
+          At-Home-Lab-Tests is one of the futuristic health innovations in practice today. To have access to a wide range of analysis, determine our lab markers and blood results without the wait at the doctors, at the lab or having to meet a lot of persons is really impressive.
         </p>
         <p>
-          I focused primarily on creating a simple to use yet intuitive interface that accomodates all the key features of Stephar.
+          Building a product like BervHomeTest required that we have to properly understand the industry and competitive forces within the industry. I had questions that i got clarity on by carefully analysing existing platforms and making hypothesis on discoveries made.
         </p>
       </DivWithHeading>
-      <img src={Wireframe} alt="" className="w-full my-10" />
       <DivWithHeading>
-        <h3>App Interface</h3>
-        <p>
-          Choosing a dashboard approach helped in ensuring every core function of the app was reachable in a glance.
-        </p>
-        <p>
-          The dashboard helps you easily access recent occurences by showing an overview while accomodating drops and their current status, all projects sorted into their respective categories and blockchain, drop updates sortable by status and date and a full blown out page containing resources that would help everyone get started
-        </p>
+        <p className="!mb-4">Brands I reviewed include:</p>
+        <div className="flex items-center justify-between">
+          <img src={iCliniq} alt="" />
+          <img src={practo} alt="" />
+          <img src={labbox} alt="" />
+          <img src={cult} alt="" />
+          <img src={letsgetchecked} alt="" />
+        </div>
       </DivWithHeading>
 
-      <div className="flex flex-col gap-6 my-10">
-        <img src={Interface1} alt="" />
-        <img src={Interface2} alt="" />
-        <img src={Interface3} alt="" />
-        <img src={Interface4} alt="" />
-        <img src={Interface5} alt="" />
-      </div>
+      <DivWithHeading className=" !max-w-4xl mx-auto">
+        <h3 className="text-center">Workflow Stages</h3>
+        <img src={workflow} alt=""  className="w-full" />
+      </DivWithHeading>
+
+      <DivWithHeading className=" !max-w-4xl mx-auto">
+        <h3 className="text-center">Information Architecture</h3>
+        <img src={architecture} alt="" className="w-full" />
+      </DivWithHeading>
+
+      <DivWithHeading className=" !max-w-5xl mx-auto">
+        <h3 className="text-center">User Persona</h3>
+        <img src={architecture} alt=""  className="w-full"/>
+      </DivWithHeading>
+
+
 
       <DivWithHeading className="mt-40">
         <h3>Outcome</h3>
