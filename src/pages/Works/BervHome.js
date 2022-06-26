@@ -5,6 +5,10 @@ import {
   cult, iCliniq,
    labbox, letsgetchecked,
   practo, workflow, architecture,
+
+  wireframe1,wireframe2,wireframe3,wireframe4,wireframe5,
+  wireframe6,wireframe7,wireframe8,wireframe9,wireframe10,
+  wireframe11,wireframe12
 } from "../../assets/images"
 
 // React Icons
@@ -14,6 +18,11 @@ import { TbBriefcase, TbUserCircle } from "react-icons/tb"
 import Layout, { DivWithHeading, MyRole } from "./Layout";
 
 export default function BervHome() {
+  const images = [
+    wireframe1,wireframe2,wireframe3,wireframe4,wireframe5,
+    wireframe6,wireframe7,wireframe8,wireframe9,wireframe10,
+    wireframe11,wireframe12
+  ]
   return (
     <Layout
       title="BervHome Tests"
@@ -124,11 +133,13 @@ export default function BervHome() {
       <DivWithHeading className=" !max-w-5xl mx-auto">
         <h3 className="text-center">Wireframes</h3>
         <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-        {[...Array(12)].map((x, i) =>
-          <img
-            src={require(`../../assets/images/bervHome/wireframe${i + 2}.svg`)}
-            alt="" key={i + 1} className="w-full" />
-        )}
+        {
+          images.map(element => {
+            return (
+              <img src={element} alt="" className="w-full"  />
+            )
+          })
+        }
       </div>
       </DivWithHeading>
 
