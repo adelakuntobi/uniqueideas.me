@@ -6,6 +6,7 @@ import About from './About';
 import styled from 'styled-components';
 import Footer from '../../components/Footer';
 import Experience from './Experience';
+import * as PageURL from "../../utils/pageUrl"
 
 
 const HeaderDiv = styled.header`
@@ -25,7 +26,7 @@ const Homepage = () => {
     {
       img: selected,
       title: "Dress Measurement",
-      route: "dress",
+      route: PageURL.DRESS_MANAGEMENT,
       desc: [
         "Research",
         "Strategy",
@@ -35,7 +36,7 @@ const Homepage = () => {
     {
       img: selected,
       title: "BervHome Tests",
-      route: "bervhome",
+      route: PageURL.BERVHOME,
       desc: [
         "Research",
         "Strategy",
@@ -44,7 +45,8 @@ const Homepage = () => {
     },
     {
       img: selected,
-      title: "Testing Header",
+      title: "Stephar",
+      route: PageURL.STEPHAR,
       desc: [
         "Research",
         "Innovative",
@@ -53,31 +55,15 @@ const Homepage = () => {
     },
     {
       img: selected,
-      title: "Testing Header",
+      title: "EveryPenny",
+      route: PageURL.STEPHAR,
       desc: [
         "Research",
         "Innovative",
         "Design"
       ]
     },
-    {
-      img: selected,
-      title: "Testing Header",
-      desc: [
-        "Research",
-        "Innovative",
-        "Design"
-      ]
-    },
-    {
-      img: selected,
-      title: "Testing Header",
-      desc: [
-        "Research",
-        "Innovative",
-        "Design"
-      ]
-    },
+   
   ]
 
   return (

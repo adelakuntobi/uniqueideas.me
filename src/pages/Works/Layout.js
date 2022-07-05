@@ -56,44 +56,44 @@ export const DivWithHeading = styled.div`
     }
     p{
       font-size: 1.125rem/* 18px */;
-  line-height: 1.75rem;
-  margin-bottom: 0.75rem;
+      line-height: 1.75rem;
+      margin-bottom: 0.75rem;
     }
    }	
 `;
 
 export const NextDiv = styled.div`
-text-align: center;
-margin: 4rem 0;
+  text-align: center;
+  margin: 4rem 0;
   p{
     font-weight: 400;
-font-size: 24px;
-line-height: 29px;
-text-transform: uppercase;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    }
+  h4{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: capitalize;
   }
-h4{
-  font-weight: 700;
-font-size: 48px;
-line-height: 58px;
-text-transform: capitalize;
-}
 `;
 
 export const MyRole = styled.div`
-max-width: 772px;
-margin: 1rem auto;
-font-size: 24px;
-line-height: 29px;
-p{
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-ul{
-  list-style: disc;
-  padding-left: 2rem;
-  li{
-
+  max-width: 772px;
+  margin: 1rem auto;
+  font-size: 24px;
+  line-height: 29px;
+  p{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
   }
-}
+  ul{
+    list-style: disc;
+    padding-left: 2rem;
+    li{
+
+    }
+  }
 
 `;

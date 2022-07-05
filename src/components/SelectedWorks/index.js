@@ -16,7 +16,7 @@ export const TitleHeading = styled.h3`
 export const SelectedWork = (props) => {
   return (
     <div>
-      <Link to={`/works/${props.route}`} >
+      <Link to={props.route} >
         <img src={props.img} className="w-full" alt="" />
       </Link>
       <hr className='my-3' style={{ color: "#9CA3AF" }} />

@@ -1,0 +1,6 @@
+export const HOMEPAGE = "/"
+export const DRESS_MANAGEMENT = "/projects/dress-management"
+export const STEPHAR = "/projects/stephar"
+export const BERVHOME = "/projects/bervhome"
+export const URBN = "/projects/urbn"
+export const DRESS_BRANDING = "/projects/dress-branding"

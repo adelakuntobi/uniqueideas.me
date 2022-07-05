@@ -136,7 +136,7 @@ export default function BervHome() {
         {
           images.map(element => {
             return (
-              <img src={element} alt="" className="w-full"  />
+              <img key={element} src={element} alt="" className="w-full"  />
             )
           })
         }
