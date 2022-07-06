@@ -4,7 +4,7 @@ import {
   BervHomeBG,
   cult, iCliniq,
   labbox, letsgetchecked,
-  practo, workflow, architecture,
+  practo, workflow, architecture, BervGif,
 
   wireframe1, wireframe2, wireframe3, wireframe4, wireframe5,
   wireframe6, wireframe7, wireframe8, wireframe9, wireframe10,
@@ -16,7 +16,7 @@ import { BiSearch } from "react-icons/bi"
 import { TbBriefcase, TbUserCircle } from "react-icons/tb"
 
 import Layout, { DivWithHeading, MyRole } from "./Layout";
-import { STEPHAR } from "../../utils/pageUrl";
+import { BERVHOME} from "../../utils/pageUrl";
 
 export default function BervHome() {
   const images = [
@@ -34,7 +34,7 @@ export default function BervHome() {
       banner={BervHomeBG}
       next="Fintech"
       textDesc="Personal Finance Management"
-      route={STEPHAR}>
+      route={BERVHOME}>
 
       {/* About Section */}
       <DivWithHeading className="my-6">
@@ -63,17 +63,17 @@ export default function BervHome() {
               <BiSearch className="text-black text-xl" />
             </div>
             Why BervHomeTests?</h3>
-          <p className=" !leading-10 lg:!mb-8">
-            Physical visits to the diagnostics center are usually time consuming. Most times, we exhaust our day sitting patiently waiting at the doctor’s. Other times we walk away.Even times when we decide to schedule, there are usully inefficiences that stands as blockers.
+          <p className=" leading-6 lg:!leading-10 lg:!mb-8">
+            Physical visits to the diagnostics center are usually time consuming. Most times, we exhaust our day sitting patiently waiting at the doctor’s. Other times we walk away. Even times when we decide to schedule, there are usully inefficiences that stands as blockers.
           </p>
-          <p className=" !leading-10">
+          <p className="  leading-6 lg:!leading-10">
             This has contributed to a great extent to the rate of deterioration of the human health as most individuals purposely miss their checkups or pathological lab appointments because its stressful to get them done.
           </p>
         </DivWithHeading>
         <DivWithHeading>
           <h3>Design Strategy and Solution</h3>
           <div className="flex items-start gap-6 mb-8 mt-6">
-            <div className=" h-16 w-16 p-4 grid place-items-center rounded-full" style={{ backgroundColor: "#FEF3C7" }}>
+            <div className=" h-16 w-16 p-4 hidden lg:grid place-items-center rounded-full" style={{ backgroundColor: "#FEF3C7" }}>
               <TbBriefcase className="text-black text-3xl" />
             </div>
             <div>
@@ -82,7 +82,7 @@ export default function BervHome() {
             </div>
           </div>
           <div className="flex items-start gap-6">
-            <div className=" h-16 w-16 p-4 grid place-items-center rounded-full" style={{ backgroundColor: "#FEF3C7" }}>
+            <div className=" h-16 w-16 p-4 hidden lg:grid place-items-center rounded-full" style={{ backgroundColor: "#FEF3C7" }}>
               <TbUserCircle className="text-black text-3xl" />
             </div>
             <div>
@@ -114,7 +114,7 @@ export default function BervHome() {
       </DivWithHeading>
       <DivWithHeading>
         <p className="!mb-4">Brands I reviewed include:</p>
-        <div className="flex items-center justify-between">
+        <div className="grid gap-x-2 gap-y-4 grid-cols-2 md:grid-cols-5 place-items-center">
           <img src={iCliniq} alt="" />
           <img src={practo} alt="" />
           <img src={labbox} alt="" />
@@ -139,6 +139,7 @@ export default function BervHome() {
       </DivWithHeading>
       <DivWithHeading className=" !max-w-5xl mx-auto">
         <h3 className="text-center">User Interface Screens</h3>
+        <img src={BervGif} className="w-full" alt="" />
         <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {
             images.map(element => {

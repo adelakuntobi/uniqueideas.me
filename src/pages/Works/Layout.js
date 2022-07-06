@@ -10,13 +10,13 @@ export default function Layout(props) {
     <div style={{ color: "#E5E7EB" }}>
       <Navbar />
       <div className="container my-5">
-        <h2 className="font-bold text-4xl lg:text-5xl mb-8">{title}</h2>
+        <h2 className="font-bold text-3xl lg:text-5xl mb-8">{title}</h2>
         <img src={banner} alt="" className="w-full" />
         {children}
         <NextDiv to={route}>
           <span>Next</span>
           <h4>{next}</h4>
-          <p className="text-3xl tracking-wider">{textDesc}</p>
+          <p className="text-xl lg:text-3xl tracking-wider">{textDesc}</p>
         </NextDiv>
         <Footer />
       </div>
@@ -75,8 +75,8 @@ export const DivWithHeading = styled.div`
    ul{
     li{
       font-size: 1.125rem/* 18px */;
-      line-height: 1.75rem;
-      margin-bottom: 1rem;
+      line-height: 1.5rem;
+      margin: 1rem 0;
     }
    }	
    }	
@@ -99,7 +99,13 @@ export const NextDiv = styled(Link)`
     text-transform: capitalize;
   }
 
-
+  @media (max-width: 1024px) { 
+    font-size: 20px;
+    h4{
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
 `;
 
 export const MyRole = styled.div`

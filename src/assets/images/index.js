@@ -6,7 +6,7 @@ import selected from "./selected.svg";
 import StepharBG from "./stephar/bg.svg"
 import Landing from "./stephar/landing.svg"
 import Chart from "./stephar/chart.svg"
-import Wireframe from "./stephar/wireframe.png"
+import Wireframe from "./stephar/Stephar.gif"
 
 import StephInterface1 from "./stephar/interface1.svg"
 import StephInterface2 from "./stephar/interface2.svg"
@@ -23,6 +23,7 @@ import letsgetchecked from "./bervHome/letsgetchecked.svg"
 import practo from "./bervHome/practo.svg"
 import cult from "./bervHome/cult.svg"
 import workflow from "./bervHome/workflow.svg"
+import BervGif from "./bervHome/Berv.gif"
 import architecture from "./bervHome/architecture.svg"
 import wireframe1 from "./bervHome/wireframe1.svg"
 import wireframe2 from "./bervHome/wireframe2.svg"
@@ -65,6 +66,7 @@ export {
   wireframe12,
 
   BervHomeBG,
+  BervGif,
   iCliniq,
   labbox,
   letsgetchecked,
