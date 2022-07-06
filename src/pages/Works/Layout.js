@@ -1,21 +1,22 @@
 import Navbar from "../../components/Navbar";
-
+import { Link } from "react-router-dom"
 // Styled Components
 import styled from "styled-components";
 import Footer from "../../components/Footer";
 
 export default function Layout(props) {
-  const { children, title, banner, next } = props
+  const { children, title, banner, next, textDesc, route } = props
   return (
-    <div style={{color: "#E5E7EB"}}>
+    <div style={{ color: "#E5E7EB" }}>
       <Navbar />
       <div className="container my-5">
         <h2 className="font-bold text-4xl lg:text-5xl mb-8">{title}</h2>
         <img src={banner} alt="" className="w-full" />
         {children}
-        <NextDiv>
-          <p>Next</p>
+        <NextDiv to={route}>
+          <span>Next</span>
           <h4>{next}</h4>
+          <p className="text-3xl tracking-wider">{textDesc}</p>
         </NextDiv>
         <Footer />
       </div>
@@ -47,7 +48,18 @@ export const DivWithHeading = styled.div`
       color: #E5E7EB;
     }
   }
-
+  ul{
+    padding-left: 1.5rem;
+    list-style: disc;
+    li{
+      font-size: 1.5rem/* 24px */;
+    line-height: 2rem;
+    margin: 1.75rem 0;
+    }
+   span{
+    font-weight: 700;
+   } 
+  }
   @media (max-width: 1024px) { 
 
     h3{
@@ -59,13 +71,22 @@ export const DivWithHeading = styled.div`
       line-height: 1.75rem;
       margin-bottom: 0.75rem;
     }
+   
+   ul{
+    li{
+      font-size: 1.125rem/* 18px */;
+      line-height: 1.75rem;
+      margin-bottom: 1rem;
+    }
+   }	
    }	
 `;
 
-export const NextDiv = styled.div`
+export const NextDiv = styled(Link)`
   text-align: center;
-  margin: 4rem 0;
-  p{
+  margin: 10rem 0 4rem;
+  display: block;
+  span{
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
@@ -77,6 +98,8 @@ export const NextDiv = styled.div`
     line-height: 58px;
     text-transform: capitalize;
   }
+
+
 `;
 
 export const MyRole = styled.div`
@@ -95,5 +118,10 @@ export const MyRole = styled.div`
 
     }
   }
-
+  @media (max-width: 1024px) { 
+    font-size: 20px;
+    p{
+      margin-bottom: 0.5rem;
+    }
+  }
 `;

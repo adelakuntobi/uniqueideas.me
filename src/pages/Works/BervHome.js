@@ -3,12 +3,12 @@
 import {
   BervHomeBG,
   cult, iCliniq,
-   labbox, letsgetchecked,
+  labbox, letsgetchecked,
   practo, workflow, architecture,
 
-  wireframe1,wireframe2,wireframe3,wireframe4,wireframe5,
-  wireframe6,wireframe7,wireframe8,wireframe9,wireframe10,
-  wireframe11,wireframe12
+  wireframe1, wireframe2, wireframe3, wireframe4, wireframe5,
+  wireframe6, wireframe7, wireframe8, wireframe9, wireframe10,
+  wireframe11, wireframe12
 } from "../../assets/images"
 
 // React Icons
@@ -16,18 +16,25 @@ import { BiSearch } from "react-icons/bi"
 import { TbBriefcase, TbUserCircle } from "react-icons/tb"
 
 import Layout, { DivWithHeading, MyRole } from "./Layout";
+import { STEPHAR } from "../../utils/pageUrl";
 
 export default function BervHome() {
   const images = [
-    wireframe1,wireframe2,wireframe3,wireframe4,wireframe5,
-    wireframe6,wireframe7,wireframe8,wireframe9,wireframe10,
-    wireframe11,wireframe12
+    wireframe1, wireframe2, wireframe3, wireframe4, wireframe5,
+    wireframe6, wireframe7, wireframe8, wireframe9, wireframe10,
+    wireframe11, wireframe12
   ]
   return (
+    // <Layout
+    //   title="BervHome Tests"
+    //   banner={BervHomeBG}
+    //   next="Fintech platform">
     <Layout
       title="BervHome Tests"
       banner={BervHomeBG}
-      next="Fintech platform">
+      next="Fintech"
+      textDesc="Personal Finance Management"
+      route={STEPHAR}>
 
       {/* About Section */}
       <DivWithHeading className="my-6">
@@ -57,10 +64,10 @@ export default function BervHome() {
             </div>
             Why BervHomeTests?</h3>
           <p className=" !leading-10 lg:!mb-8">
-            Since 2021 when NFTs and the metaverse became widely adopted, there has been a large entrance of creators and buyers. Sometimes, one would only hear about an NFT project with a unique offering after its minting price becomes really expensive.
+            Physical visits to the diagnostics center are usually time consuming. Most times, we exhaust our day sitting patiently waiting at the doctor’s. Other times we walk away.Even times when we decide to schedule, there are usully inefficiences that stands as blockers.
           </p>
           <p className=" !leading-10">
-            Since there’s a lot of marketplace for these NFTs and metaverse projects, its become more difficult to stay updated with recent information as users will have to sort through several platforms to accumulate information.
+            This has contributed to a great extent to the rate of deterioration of the human health as most individuals purposely miss their checkups or pathological lab appointments because its stressful to get them done.
           </p>
         </DivWithHeading>
         <DivWithHeading>
@@ -118,7 +125,7 @@ export default function BervHome() {
 
       <DivWithHeading className=" !max-w-4xl mx-auto">
         <h3 className="text-center">Workflow Stages</h3>
-        <img src={workflow} alt=""  className="w-full" />
+        <img src={workflow} alt="" className="w-full" />
       </DivWithHeading>
 
       <DivWithHeading className=" !max-w-4xl mx-auto">
@@ -128,27 +135,21 @@ export default function BervHome() {
 
       <DivWithHeading className=" !max-w-5xl mx-auto">
         <h3 className="text-center">User Persona</h3>
-        <img src={architecture} alt=""  className="w-full"/>
+        <img src={architecture} alt="" className="w-full" />
       </DivWithHeading>
       <DivWithHeading className=" !max-w-5xl mx-auto">
-        <h3 className="text-center">Wireframes</h3>
+        <h3 className="text-center">User Interface Screens</h3>
         <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-        {
-          images.map(element => {
-            return (
-              <img key={element} src={element} alt="" className="w-full"  />
-            )
-          })
-        }
-      </div>
+          {
+            images.map(element => {
+              return (
+                <img key={element} src={element} alt="" className="w-full" />
+              )
+            })
+          }
+        </div>
       </DivWithHeading>
 
-
-
-      <DivWithHeading className="mt-40">
-        <h3>Outcome</h3>
-        <p>After successful completion of the interface for Stephar, a usability test was conducted with five participants. While most feedback received was  positive, we are still constantly iterating to ensure best experience for our users while keeping the business goal at the forefront of our thoughts.</p>
-      </DivWithHeading>
 
     </Layout>
   )
