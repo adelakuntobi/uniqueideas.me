@@ -24,6 +24,9 @@ import practo from "./bervHome/practo.svg"
 import cult from "./bervHome/cult.svg"
 import workflow from "./bervHome/workflow.svg"
 import BervGif from "./bervHome/Berv.gif"
+import BervGroup1 from "bervHome/bervGroup1.png"
+import BervGroup2 from "bervHome/bervGroup2.png"
+
 import architecture from "./bervHome/architecture.svg"
 import wireframe1 from "./bervHome/wireframe1.svg"
 import wireframe2 from "./bervHome/wireframe2.svg"
@@ -38,6 +41,8 @@ import wireframe10 from "./bervHome/wireframe10.svg"
 import wireframe11 from "./bervHome/wireframe11.svg"
 import wireframe12 from "./bervHome/wireframe12.svg"
 
+import User1 from "./bervHome/user1.svg"
+import User2 from "./bervHome/user2.svg"
 
 export {
   selected,
@@ -65,6 +70,9 @@ export {
   wireframe11,
   wireframe12,
 
+  User1,
+  User2,
+
   BervHomeBG,
   BervGif,
   iCliniq,
@@ -73,6 +81,8 @@ export {
   practo,
   cult,
   workflow,
-  architecture
+  architecture,
+  BervGroup1,
+  BervGroup2,
 
 };
