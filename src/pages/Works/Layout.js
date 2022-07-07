@@ -9,7 +9,9 @@ export default function Layout(props) {
   const { children, title, banner, next, textDesc, route, home } = props
   return (
     <div style={{ color: "#E5E7EB" }}>
-      <Navbar />
+      <div className="container">
+        <Navbar />
+      </div>
       <div className="container my-5">
         <h2 className="font-bold text-3xl lg:text-5xl mb-8">{title}</h2>
         <img src={banner} alt="" className="w-full" />

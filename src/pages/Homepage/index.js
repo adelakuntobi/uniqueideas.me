@@ -7,7 +7,14 @@ import styled from 'styled-components';
 import Footer from '../../components/Footer';
 import Experience from './Experience';
 import * as PageURL from "../../utils/pageUrl"
-import Stephar from "../../assets/images/stephar.svg"
+
+
+import Stephar from "../../assets/images/landing/stephar.svg"
+import Bervhome from "../../assets/images/landing/bervhome.svg"
+import Everypenny from "../../assets/images/landing/everypenny.svg"
+import DressBranding from "../../assets/images/landing/dressBranding.svg"
+import DressManagement from "../../assets/images/landing/dressManagement.svg"
+import Urbn from "../../assets/images/landing/urbn.svg"
 
 const HeaderDiv = styled.header`
   height: calc( 100vh - 200px);
@@ -35,7 +42,7 @@ const Homepage = () => {
       color: "#FDC741",
       imageText: "Easily take, store and share your measurements",
       case: "UX Case Study",
-      imageImg: Stephar 
+      imageImg: DressManagement
     },
     {
       img: selected,
@@ -49,7 +56,7 @@ const Homepage = () => {
       color: "#FEF3C7",
       imageText: "At-home tests for everyone",
       case: "UX Case Study",
-      imageImg: Stephar,
+      imageImg: Bervhome,
     },
     {
       img: selected,
@@ -68,7 +75,7 @@ const Homepage = () => {
     {
       img: selected,
       title: "EveryPenny",
-      route: PageURL.STEPHAR,
+      route: "/",
       desc: [
         "Research",
         "Innovative",
@@ -77,7 +84,7 @@ const Homepage = () => {
       color: "#4159D4",
       imageText: "Personal Finance Management",
       case: "UX Case Study",
-      imageImg: Stephar 
+      imageImg: Everypenny 
     },
 
   ]
@@ -93,7 +100,7 @@ const Homepage = () => {
       color: "#41BED4",
       imageText: "Easily take, store and share your measurements",
       case: "Branding",
-      imageImg: Stephar 
+      imageImg: DressBranding 
     },
     {
       img: selected,
@@ -106,7 +113,7 @@ const Homepage = () => {
       color: "#FF5254",
       imageText: "Streetwear Fashion Brand",
       case: "Branding",
-      imageImg: Stephar 
+      imageImg: Urbn
     },
   ]
 

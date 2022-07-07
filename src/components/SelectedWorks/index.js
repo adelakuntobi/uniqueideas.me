@@ -51,8 +51,8 @@ export const SelectedWork = (props) => {
         </SelectedImg>
       </Link>
       <hr className='my-3' style={{ color: "#9CA3AF" }} />
-      <h4 className='text-2xl lg:text-3xl font-medium '>{item.name}</h4>
-      <ul className='flex list-disc gap-8 uppercase my-2' style={{ color: " #9CA3AF" }}>
+      <h4 className='text-2xl lg:text-3xl font-medium '>{item.title}</h4>
+      {/* <ul className='flex list-disc gap-8 uppercase my-2' style={{ color: " #9CA3AF" }}>
         {
           item.desc.map((des, num) => {
             return (
@@ -60,7 +60,7 @@ export const SelectedWork = (props) => {
             )
           })
         }
-      </ul>
+      </ul> */}
     </div >
   )
 
