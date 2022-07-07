@@ -104,7 +104,7 @@ const Homepage = () => {
       <main>
 
         {/* Selected Works */}
-        <section className='border-t border-b py-12' style={{ borderColor: "#374151" }}>
+        <section id='works' className='border-t border-b py-12' style={{ borderColor: "#374151" }}>
           <TitleHeading>Selected -- Works</TitleHeading>
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-10'>
             {
@@ -136,7 +136,7 @@ const Homepage = () => {
         <Experience />
 
         {/* Lets get to work */}
-        <ReadyToWork className='items-center flex-col'>
+        <ReadyToWork id="contact" className='items-center flex-col'>
           <p className='mb-7 text-4xl'> &#x1F642;</p>
           <h5 className='uppercase font-bold text-xs mb-2' style={{ color: "#9CA3AF" }}>Ready to start a project?</h5>
           <h2 className='text-text font-bold text-3xl mb-7'>Let's work together</h2>

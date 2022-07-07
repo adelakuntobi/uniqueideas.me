@@ -4,26 +4,26 @@ import { TitleHeading } from '../../components/SelectedWorks';
 
 export default function Experience() {
   return (
-    <section className='lg:my-20 flex flex-col lg:flex-row gap-x-20 gap-y-10'>
-      
+    <section id='experience' className='lg:my-20 flex flex-col lg:flex-row gap-x-20 gap-y-10'>
+
       <div className='w-full lg:w-1/2'>
         <TitleHeading>Experience</TitleHeading>
         <div>
           <ExperienceDiv>
-            <p>Aeeiee.inc <span>Februrary 2021 - today</span></p>
-            <p>User Experience Designer</p>
-          </ExperienceDiv>
-          <ExperienceDiv>
-            <p>Aeeiee.inc <span>Februrary 2021 - today</span></p>
-            <p>User Experience Designer</p>
-          </ExperienceDiv>
-          <ExperienceDiv>
-            <p>Aeeiee.inc <span>Februrary 2021 - today</span></p>
-            <p>User Experience Designer</p>
-          </ExperienceDiv>
-          <ExperienceDiv>
             <p>Aeeiee.inc, <span>Februrary 2021 - today</span></p>
             <p>User Experience Designer</p>
+          </ExperienceDiv>
+          <ExperienceDiv>
+            <p>Crownswap, <span>September - Februrary 2021</span></p>
+            <p>User Experience Designer - Contract</p>
+          </ExperienceDiv>
+          <ExperienceDiv>
+            <p>HNGi7, <span>May 2020 - August 2020</span></p>
+            <p>User Experience Intern</p>
+          </ExperienceDiv>
+          <ExperienceDiv>
+            <p>Innovation Growth Hub, <span>Dec 2019 - March 2020</span></p>
+            <p>User Experience Intern</p>
           </ExperienceDiv>
         </div>
       </div>

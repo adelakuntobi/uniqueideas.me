@@ -30,7 +30,7 @@ export const SelectedWork = (props) => {
         {
           props.desc.map((des, num) => {
             return (
-              <li key={num} className=' text-sm lg:text-lg first-of-type:list-none'>{des}</li>
+              <li key={num} className=' text-sm lg:text-base first-of-type:list-none'>{des}</li>
             )
           })
         }
