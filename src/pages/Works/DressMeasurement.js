@@ -1,5 +1,5 @@
 import Layout, { DivWithHeading, MyRole } from './Layout'
-import Banner from "../../assets/images/dressMeasurement/banner.svg"
+import Banner from "../../assets/images/dressMeasurement/banner.png"
 import Measurement1 from "../../assets/images/dressMeasurement/measurement1.svg"
 import Measurement2 from "../../assets/images/dressMeasurement/measurement2.svg"
 import Measurement3 from "../../assets/images/dressMeasurement/measurement3.svg"
