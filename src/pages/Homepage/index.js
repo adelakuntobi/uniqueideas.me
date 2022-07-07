@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import Footer from '../../components/Footer';
 import Experience from './Experience';
 import * as PageURL from "../../utils/pageUrl"
-
+import Stephar from "../../assets/images/stephar.svg"
 
 const HeaderDiv = styled.header`
   height: calc( 100vh - 200px);
@@ -31,7 +31,11 @@ const Homepage = () => {
         "Research",
         "Strategy",
         "Design"
-      ]
+      ],
+      color: "#FDC741",
+      imageText: "Easily take, store and share your measurements",
+      case: "UX Case Study",
+      imageImg: Stephar 
     },
     {
       img: selected,
@@ -41,7 +45,11 @@ const Homepage = () => {
         "Research",
         "Strategy",
         "Design"
-      ]
+      ],
+      color: "#FEF3C7",
+      imageText: "At-home tests for everyone",
+      case: "UX Case Study",
+      imageImg: Stephar,
     },
     {
       img: selected,
@@ -51,7 +59,11 @@ const Homepage = () => {
         "Research",
         "Innovative",
         "Design"
-      ]
+      ],
+      color: "#41BED4",
+      imageText: "Metaverse and NFT Analysis platform",
+      case: "UX Case Study",
+      imageImg: Stephar 
     },
     {
       img: selected,
@@ -61,7 +73,11 @@ const Homepage = () => {
         "Research",
         "Innovative",
         "Design"
-      ]
+      ],
+      color: "#4159D4",
+      imageText: "Personal Finance Management",
+      case: "UX Case Study",
+      imageImg: Stephar 
     },
 
   ]
@@ -73,7 +89,11 @@ const Homepage = () => {
       desc: [
         "Research",
         "Branding"
-      ]
+      ],
+      color: "#41BED4",
+      imageText: "Easily take, store and share your measurements",
+      case: "Branding",
+      imageImg: Stephar 
     },
     {
       img: selected,
@@ -82,7 +102,11 @@ const Homepage = () => {
       desc: [
         "Research",
         "Branding"
-      ]
+      ],
+      color: "#FF5254",
+      imageText: "Streetwear Fashion Brand",
+      case: "Branding",
+      imageImg: Stephar 
     },
   ]
 
@@ -110,7 +134,7 @@ const Homepage = () => {
             {
               SelectedArray.map((item, num) => {
                 return (
-                  <SelectedWork key={num} name={item.title} img={item.img} desc={item.desc} route={item.route} />
+                  <SelectedWork key={num} item={item} />
                 )
               })
             }
@@ -122,7 +146,7 @@ const Homepage = () => {
             {
               BrandingArray.map((item, num) => {
                 return (
-                  <SelectedWork key={num} name={item.title} img={item.img} desc={item.desc} route={item.route} />
+                  <SelectedWork key={num} item={item} />
                 )
               })
             }
