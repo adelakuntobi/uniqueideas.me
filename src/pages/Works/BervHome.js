@@ -61,10 +61,6 @@ export default function BervHome() {
     wireframe6, wireframe7, wireframe8,
   ]
   return (
-    // <Layout
-    //   title="BervHome Tests"
-    //   banner={BervHomeBG}
-    //   next="Fintech platform">
     <Layout
       title="BervHome Tests"
       banner={BervHomeBG}
@@ -223,7 +219,7 @@ export default function BervHome() {
 
       </DivWithHeading>
 
-      <DivWithHeading>
+      <div className=" max-w-7xl mx-auto">
         <img src={BervGroup1} className="w-full" alt="" />
         <img src={BervGroup2} className="w-full" alt="" />
 
@@ -236,7 +232,7 @@ export default function BervHome() {
             })
           }
         </div>
-      </DivWithHeading>
+      </div>
     </Layout >
   )
 }

@@ -10,18 +10,15 @@ import { StephInterface2 } from "../../assets/images"
 import { StephInterface3 } from "../../assets/images"
 import { StephInterface4 } from "../../assets/images"
 import { StephInterface5 } from "../../assets/images"
-import { STEPHAR } from "../../utils/pageUrl"
 
 import Layout, { DivWithHeading, MyRole } from "./Layout";
 
 export default function Stephar() {
   return (
     <Layout
-    title="BervHome Tests"
+    title="Stephar"
     banner={StepharBG}
-    next="Fintech"
-    textDesc="Personal Finance Management"
-    route={STEPHAR}>
+    home={true}>
 
       {/* About Section */}
       <DivWithHeading>

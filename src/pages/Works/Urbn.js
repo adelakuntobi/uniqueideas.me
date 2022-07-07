@@ -34,10 +34,10 @@ export default function Urbn() {
     components.push(<img src={`urbn${i}`} alt="" />)
   }
   return (
-    <Layout
-      title="URBN - Streetwear Fashion Branding"
-      banner={urbn1}
-      next="Back to Homepage">
+   <Layout
+    title="URBN - Streetwear Fashion Branding"
+    banner={urbn1}
+    home={true}>
       <div>
         {[...Array(8)].map((x, i) =>
           <img

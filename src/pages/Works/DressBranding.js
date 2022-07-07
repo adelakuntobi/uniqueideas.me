@@ -1,13 +1,20 @@
 import Layout from "./Layout";
 import dress1 from "../../assets/images/dress/dress1.png"
 import DressDiv from "../../components/Dress/DressDiv";
+import { URBN } from "../../utils/pageUrl";
 
 export default function Dress() {
   return (
+    // <Layout
+    // title="Dress Measurement App Branding"
+    // banner={dress1}
+    // next="URBN Branding">
     <Layout
       title="Dress Measurement App Branding"
       banner={dress1}
-      next="URBN Branding">
+      next="URBN Branding"
+      textDesc=""
+      route={URBN}>
       <DressDiv>
         <p>Dress Measurement app as the name implies is an app that let’s you take, store and send your clothing and body measurements anywhere. It guides you on how to take your body measurements and stores them in the cloud for easy future reference.
         </p>

@@ -11,6 +11,11 @@ export const TitleHeading = styled.h3`
   color: #D1E2C0;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
+  @media (max-width: 1024px) { 
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 1rem;
+   }	
 `;
 
 export const SelectedWork = (props) => {
@@ -20,12 +25,12 @@ export const SelectedWork = (props) => {
         <img src={props.img} className="w-full" alt="" />
       </Link>
       <hr className='my-3' style={{ color: "#9CA3AF" }} />
-      <h4 className='text-3xl font-medium '>{props.name}</h4>
-      <ul className='flex list-disc gap-6 uppercase' style={{ color: "#D1D5DB" }}>
+      <h4 className='text-2xl lg:text-3xl font-medium '>{props.name}</h4>
+      <ul className='flex list-disc gap-6 uppercase' style={{ color: " #9CA3AF" }}>
         {
           props.desc.map((des, num) => {
             return (
-              <li key={num} className=' first-of-type:list-none'>{des}</li>
+              <li key={num} className=' text-sm lg:text-lg first-of-type:list-none'>{des}</li>
             )
           })
         }

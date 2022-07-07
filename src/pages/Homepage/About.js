@@ -4,7 +4,7 @@ import { TitleHeading } from '../../components/SelectedWorks'
 
 export default function About() {
   return (
-    <section className='py-24'>
+    <section className='py-16 lg:py-24'>
       <TitleHeading>About Me</TitleHeading>
       <div className=' lg:w-10/12'>
         <Ptag className='text-lg lg:text-3xl'>
@@ -34,5 +34,10 @@ margin-bottom: 1.5rem;
 
 
 color: #E5E7EB;
+@media (max-width: 1024px) { 
+  line-height: 30px;
+/* or 125% */
+margin-bottom: 1rem;
+   }	
 
 `;

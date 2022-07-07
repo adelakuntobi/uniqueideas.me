@@ -63,14 +63,34 @@ const Homepage = () => {
         "Design"
       ]
     },
-   
+
+  ]
+  const BrandingArray = [
+    {
+      img: selected,
+      title: "Dress Measurement App",
+      route: PageURL.DRESS_BRANDING,
+      desc: [
+        "Research",
+        "Branding"
+      ]
+    },
+    {
+      img: selected,
+      title: "URBN Brand",
+      route: PageURL.URBN,
+      desc: [
+        "Research",
+        "Branding"
+      ]
+    },
   ]
 
   return (
     <div className='container relative'>
       <header className='min-h-screen'>
         <Navbar />
-        <HeaderDiv className='justify-between'>
+        <HeaderDiv className='flex-col lg:flex-row justify-between'>
           <h1 className='text-5xl font-bold'>Passionately designing thoughtful, intuitive, and delightful experiences for all human.</h1>
           <p className='text-primary'>
             Hi, my name is{" "}
@@ -100,7 +120,7 @@ const Homepage = () => {
           <TitleHeading>Branding</TitleHeading>
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-10'>
             {
-              SelectedArray.map((item, num) => {
+              BrandingArray.map((item, num) => {
                 return (
                   <SelectedWork key={num} name={item.title} img={item.img} desc={item.desc} route={item.route} />
                 )
