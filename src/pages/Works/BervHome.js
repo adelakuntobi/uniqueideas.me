@@ -5,11 +5,10 @@ import {
   cult, iCliniq,
   labbox, letsgetchecked,
   practo, workflow, architecture, BervGif,
-  BervGroup1,BervGroup2,
+  BervGroup1, BervGroup2,
 
-  // wireframe1, wireframe2, wireframe3, wireframe4, wireframe5,
-  // wireframe6, wireframe7, wireframe8, wireframe9, wireframe10,
-  // wireframe11, wireframe12,
+  wireframe1, wireframe2, wireframe3, wireframe4, wireframe5,
+  wireframe6, wireframe7, wireframe8,
 
   User1, User2,
 } from "../../assets/images"
@@ -57,11 +56,10 @@ const UserPersonal = [
   },
 ]
 export default function BervHome() {
-  // const images = [
-  //   wireframe1, wireframe2, wireframe3, wireframe4, wireframe5,
-  //   wireframe6, wireframe7, wireframe8, wireframe9, wireframe10,
-  //   wireframe11, wireframe12
-  // ]
+  const images = [
+    wireframe1, wireframe2, wireframe3, wireframe4, wireframe5,
+    wireframe6, wireframe7, wireframe8,
+  ]
   return (
     // <Layout
     //   title="BervHome Tests"
@@ -178,7 +176,7 @@ export default function BervHome() {
             UserPersonal.map(user => {
               return (
 
-                <UserPersona  key={user.age}>
+                <UserPersona key={user.age}>
                   <div className="imgAndText">
                     <img src={user.img} alt="" />
                     <div className=" ">
@@ -223,11 +221,13 @@ export default function BervHome() {
         <h3 className="text-center">User Interface Screens</h3>
         <img src={BervGif} className="w-full" alt="" />
 
-        <DivWithHeading>
+      </DivWithHeading>
+
+      <DivWithHeading>
         <img src={BervGroup1} className="w-full" alt="" />
         <img src={BervGroup2} className="w-full" alt="" />
-        </DivWithHeading>
-        {/* <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+
+        <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {
             images.map(element => {
               return (
@@ -235,10 +235,8 @@ export default function BervHome() {
               )
             })
           }
-        </div> */}
+        </div>
       </DivWithHeading>
-
-
     </Layout >
   )
 }

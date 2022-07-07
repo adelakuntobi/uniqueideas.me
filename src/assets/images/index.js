@@ -16,7 +16,7 @@ import StephInterface5 from "./stephar/interface5.svg"
 
 
 // BervHome
-import BervHomeBG from "./bervHome/bg.svg"
+import BervHomeBG from "./bervHome/bg.png"
 import iCliniq from "./bervHome/icliniq.svg"
 import labbox from "./bervHome/labbox.svg"
 import letsgetchecked from "./bervHome/letsgetchecked.svg"
@@ -28,18 +28,14 @@ import BervGroup1 from "./bervHome/bervGroup1.png"
 import BervGroup2 from "./bervHome/bervGroup2.png"
 
 import architecture from "./bervHome/architecture.svg"
-import wireframe1 from "./bervHome/wireframe1.svg"
-import wireframe2 from "./bervHome/wireframe2.svg"
-import wireframe3 from "./bervHome/wireframe3.svg"
-import wireframe4 from "./bervHome/wireframe4.svg"
-import wireframe5 from "./bervHome/wireframe5.svg"
-import wireframe6 from "./bervHome/wireframe6.svg"
-import wireframe7 from "./bervHome/wireframe7.svg"
-import wireframe8 from "./bervHome/wireframe8.svg"
-import wireframe9 from "./bervHome/wireframe9.svg"
-import wireframe10 from "./bervHome/wireframe10.svg"
-import wireframe11 from "./bervHome/wireframe11.svg"
-import wireframe12 from "./bervHome/wireframe12.svg"
+import wireframe1 from "./bervHome/wireframe1.png"
+import wireframe2 from "./bervHome/wireframe2.png"
+import wireframe3 from "./bervHome/wireframe3.png"
+import wireframe4 from "./bervHome/wireframe4.png"
+import wireframe5 from "./bervHome/wireframe5.png"
+import wireframe6 from "./bervHome/wireframe6.png"
+import wireframe7 from "./bervHome/wireframe7.png"
+import wireframe8 from "./bervHome/wireframe8.png"
 
 import User1 from "./bervHome/user1.svg"
 import User2 from "./bervHome/user2.svg"
@@ -65,10 +61,6 @@ export {
   wireframe6,
   wireframe7,
   wireframe8,
-  wireframe9,
-  wireframe10,
-  wireframe11,
-  wireframe12,
 
   User1,
   User2,
