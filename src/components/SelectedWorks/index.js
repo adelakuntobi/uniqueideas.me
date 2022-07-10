@@ -51,15 +51,18 @@ export const SelectedWork = (props) => {
         </SelectedImg>
       </Link>
       {/* <hr className='my-3' style={{ color: "#9CA3AF" }} /> */}
-      <div className='justify-between'>
-        <h4 className='text-2xl lg:text-3xl font-medium my-3'>{item.title}</h4>
-        <p className='coming-soon'>
-          <span className=' h-3 w-3' style={{ backgroundColor: "#41BED4;" }}></span>
-          Coming Soon
-        </p>
+      <div className='justify-between my-3'>
+        <h4 className='text-2xl lg:text-3xl font-medium'>{item.title}</h4>
+        {
+          item.comingSoon &&
+          <p className='coming-soon items-center gap-3 p-3' style={{ color: "#41BED4", backgroundColor: "#163b42", }}>
+            <span className=' h-3 w-3 block rounded-full  ' style={{ backgroundColor: "#41BED4" }}></span>
+            Coming Soon
+          </p>
+        }
       </div>
       {/* <ul className='flex list-disc gap-8 uppercase my-2' style={{ color: " #9CA3AF" }}>
-        {
+      {
           item.desc.map((des, num) => {
             return (
               <li key={num} className=' text-xs lg:text-base first-of-type:list-none'>{des}</li>
@@ -97,7 +100,5 @@ const SelectedImg = styled.div`
       font-size: 7.27401px;
       line-height: 9px;
     }
-    .coming-soon{
-
-    }
+  
   `;

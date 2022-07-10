@@ -84,7 +84,8 @@ const Homepage = () => {
       color: "#4159D4",
       imageText: "Personal Finance Management",
       case: "UX Case Study",
-      imageImg: Everypenny
+      imageImg: Everypenny,
+      comingSoon: true,
     },
 
   ]
@@ -151,7 +152,7 @@ const Homepage = () => {
           </div>
         </section>
         <section className='border-t border-b py-12' style={{ borderColor: "#374151" }}>
-          <TitleHeading>Branding</TitleHeading>
+          <TitleHeading>Branding Projects</TitleHeading>
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-10'>
             {
               BrandingArray.map((item, num) => {
