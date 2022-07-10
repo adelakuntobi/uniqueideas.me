@@ -4,7 +4,8 @@ import Measurement1 from "../../assets/images/dressMeasurement/measurement1.svg"
 import Measurement2 from "../../assets/images/dressMeasurement/measurement2.svg"
 import Measurement3 from "../../assets/images/dressMeasurement/measurement3.svg"
 import Measurement4 from "../../assets/images/dressMeasurement/measurement4.svg"
-import { BERVHOME } from '../../utils/pageUrl'
+import { BERVHOME, DRESS_BRANDING } from '../../utils/pageUrl'
+import { Link } from 'react-router-dom'
 
 export default function DressMeasurement() {
   return (
@@ -23,7 +24,7 @@ export default function DressMeasurement() {
           It aims to meet the needs of enterpreneurs in the fashion industry and individuals who want to have their clothing measurements handy.
         </p>
         <p>
-          Easily take down your measurements by sight of an avatar or by a name on our alphatized
+          Easily take down your measurements by sight of an avatar or by a name on our alphatized list view. Keep the pen and paper away
         </p>
       </DivWithHeading>
       <DivWithHeading className="!py-0">
@@ -50,10 +51,12 @@ export default function DressMeasurement() {
       <MyRole>
         <p>My role</p>
         <ul>
-          <li>User Reasearch</li>
+          <li>User Research'</li>
           <li>Product Strategy</li>
           <li>Interface Design</li>
-          <li>Branding</li>
+          <Link to={DRESS_BRANDING} className="text-primarye">
+            <li>Branding</li>
+          </Link>
         </ul>
 
       </MyRole>

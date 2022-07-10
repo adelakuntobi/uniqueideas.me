@@ -109,10 +109,15 @@ export const NextDiv = styled(Link)`
   }
 
   @media (max-width: 1024px) { 
-    font-size: 20px;
+    font-size: 14px;
     h4{
       font-size: 30px;
       line-height: 40px;
+    }
+    span{
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 0.7;
     }
   }
 `;

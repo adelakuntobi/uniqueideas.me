@@ -18,7 +18,7 @@ import { BiSearch } from "react-icons/bi"
 import { TbBriefcase, TbUserCircle } from "react-icons/tb"
 
 import Layout, { DivWithHeading, MyRole } from "./Layout";
-import { BERVHOME } from "../../utils/pageUrl";
+import { STEPHAR } from "../../utils/pageUrl";
 import styled from "styled-components";
 const UserPersonal = [
   {
@@ -66,7 +66,7 @@ export default function BervHome() {
       banner={BervHomeBG}
       next="Fintech"
       textDesc="Personal Finance Management"
-      route={BERVHOME}>
+      route={STEPHAR}>
 
       {/* About Section */}
       <DivWithHeading className="my-6">
@@ -75,13 +75,13 @@ export default function BervHome() {
           <b>BervHomeTests</b> is an impactful health innovation granting people access to easier analysis of health conditions without having them wait through long queues. At home laboratory testing is clearly private and convenient and have proven to be reliable. One can have series of important tests without leaving the comfort of their home.
         </p>
         <p>
-          Here, BervHomeTests sends an expert team will get to you at a pre-scheduled time, conduct the test and avail the results within a timeframe of 24-48 hours.
+          Here, BervHomeTests sends an expert team that will get to you at a pre-scheduled time, conduct the test and avail the results within a timeframe of 24-48 hours.
         </p>
       </DivWithHeading>
       <MyRole>
         <p>My role</p>
         <ul>
-          <li>User Reasearch</li>
+          <li>User Research'</li>
           <li>Product Strategy</li>
           <li>Interface Design</li>
           <li>Branding</li>
@@ -96,7 +96,7 @@ export default function BervHome() {
             </div>
             Why BervHomeTests?</h3>
           <p className=" leading-6 lg:!leading-10 lg:!mb-8">
-            Physical visits to the diagnostics center are usually time consuming. Most times, we exhaust our day sitting patiently waiting at the doctor’s. Other times we walk away. Even times when we decide to schedule, there are usully inefficiences that stands as blockers.
+            Physical visits to the diagnostics center are usually time consuming. Most times, we exhaust our day sitting patiently waiting at the doctor’s. Other times we walk away. Even times when we decide to schedule, there are usually inefficiences that stands as blockers.
           </p>
           <p className="  leading-6 lg:!leading-10">
             This has contributed to a great extent to the rate of deterioration of the human health as most individuals purposely miss their checkups or pathological lab appointments because its stressful to get them done.
