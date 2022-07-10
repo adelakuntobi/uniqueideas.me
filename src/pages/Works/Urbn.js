@@ -45,7 +45,7 @@ export default function Urbn() {
             alt="" key={i + 2} className="w-full" />
        
         )}
-        <h3 className='mt-8 mb-6 font-bold text-3xl pl-12 '>Use Cases</h3>
+        <h3 className='mt-8 mb-6 font-bold text-xl lg:text-3xl pl-12 '>Use Cases</h3>
         {[...Array(10)].map((x, i) =>
           <img
             src={require(`../../assets/images/urbn/urbn${i + 10}.png`)}
@@ -53,15 +53,7 @@ export default function Urbn() {
        
         )}
       </div>
-      {/* <div>
-        {
-          components.map(element => {
-            return (
-              <img src={element} className="w-full" alt="" />
-            )
-          })
-        }
-      </div> */}
+   
     </Layout>
   )
 }
