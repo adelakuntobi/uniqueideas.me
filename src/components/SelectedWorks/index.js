@@ -23,7 +23,7 @@ export const TitleHeading = styled.h3`
 export const SelectedWork = (props) => {
   const { item } = props
   return (
-    <div>
+    <div className='flex flex-col-reverse lg:flex-col'>
       <Link to={item.route} >
         {/* <img src={item.img} className="w-full" alt="" /> */}
         <SelectedImg>
@@ -50,8 +50,14 @@ export const SelectedWork = (props) => {
           <img src={BottomBG} alt="" className='absolute bottom-0 right-12' />
         </SelectedImg>
       </Link>
-      <hr className='my-3' style={{ color: "#9CA3AF" }} />
-      <h4 className='text-2xl lg:text-3xl font-medium '>{item.title}</h4>
+      {/* <hr className='my-3' style={{ color: "#9CA3AF" }} /> */}
+      <div className='justify-between'>
+        <h4 className='text-2xl lg:text-3xl font-medium my-3'>{item.title}</h4>
+        <p className='coming-soon'>
+          <span className=' h-3 w-3' style={{ backgroundColor: "#41BED4;" }}></span>
+          Coming Soon
+        </p>
+      </div>
       {/* <ul className='flex list-disc gap-8 uppercase my-2' style={{ color: " #9CA3AF" }}>
         {
           item.desc.map((des, num) => {
@@ -90,5 +96,8 @@ const SelectedImg = styled.div`
     li{
       font-size: 7.27401px;
       line-height: 9px;
+    }
+    .coming-soon{
+
     }
   `;

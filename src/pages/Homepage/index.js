@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import Footer from '../../components/Footer';
 import Experience from './Experience';
 import * as PageURL from "../../utils/pageUrl"
-
+import { HiOutlineArrowRight } from "react-icons/hi"
 
 import Stephar from "../../assets/images/landing/stephar.svg"
 import Bervhome from "../../assets/images/landing/bervhome.svg"
@@ -70,7 +70,7 @@ const Homepage = () => {
       color: "#41BED4",
       imageText: "Metaverse and NFT Analysis platform",
       case: "UX Case Study",
-      imageImg: Stephar 
+      imageImg: Stephar
     },
     {
       img: selected,
@@ -84,7 +84,7 @@ const Homepage = () => {
       color: "#4159D4",
       imageText: "Personal Finance Management",
       case: "UX Case Study",
-      imageImg: Everypenny 
+      imageImg: Everypenny
     },
 
   ]
@@ -100,7 +100,7 @@ const Homepage = () => {
       color: "#41BED4",
       imageText: "Easily take, store and share your measurements",
       case: "Branding",
-      imageImg: DressBranding 
+      imageImg: DressBranding
     },
     {
       img: selected,
@@ -121,14 +121,17 @@ const Homepage = () => {
     <div className='container relative'>
       <header className='min-h-screen'>
         <Navbar />
-        <HeaderDiv className='flex-col lg:flex-row justify-between'>
-          <h1 className='text-5xl font-bold'>Passionately designing thoughtful, intuitive, and delightful experiences for all human.</h1>
-          <p className='text-primary'>
-            Hi, my name is{" "}
-            <span className='font-medium uppercase'>Ify</span>.
-            <br />
-            A product designer passionate about solving complex issues by designing user-friendly digital products and
-            web experiences.</p>
+        <HeaderDiv className='flex-col lg:flex-row justify-between '>
+          <div className='w-7/12'>
+            <h1 className='text-5xl font-bold leading-tight tracking-wide mb-4'>Passionately designing thoughtful, intuitive, and delightful experiences for all human.</h1>
+            <p className='text-primary'>
+              Hi, I’m <span className='font-medium'>IFY, a product designer passionate</span> about people and how technology enhances our living experience. I love to create products that people love and trust.
+            </p>
+          </div>
+          <div className='w-5/12 grid place-items-center'>
+
+            <HiOutlineArrowRight className='text-5xl' />
+          </div>
         </HeaderDiv>
       </header>
 
