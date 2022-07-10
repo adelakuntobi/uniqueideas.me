@@ -36,7 +36,7 @@ export default function Stephar() {
           That’s where Stephar comes in
         </p>
         <p>
-          Stephar helps you learn about <NFTs></NFTs> and metaverse drops and keeps you updated on biggest NFT
+          Stephar helps you learn about NFTs and metaverse drops and keeps you updated on biggest NFT
           projects, live news feeds, top collections, analytics and statistics.
         </p>
       </DivWithHeading>
