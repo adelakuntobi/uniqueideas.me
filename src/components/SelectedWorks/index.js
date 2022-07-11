@@ -55,7 +55,7 @@ export const SelectedWork = (props) => {
         <h4 className='text-2xl lg:text-3xl font-medium'>{item.title}</h4>
         {
           item.comingSoon &&
-          <p className='coming-soon items-center gap-3 p-3' style={{ color: "#41BED4", backgroundColor: "#163b42", }}>
+          <p className='coming-soon items-center gap-3 px-3 py-2' style={{ color: "#41BED4", backgroundColor: "#163b42", }}>
             <span className=' h-3 w-3 block rounded-full  ' style={{ backgroundColor: "#41BED4" }}></span>
             Coming Soon
           </p>

@@ -35,7 +35,7 @@ export default function Experience() {
           <li>User Experience Design</li>
           <li>User Research</li>
           <li>Usability Testing</li>
-          <li>Product Stretegy</li>
+          <li>Product Strategy </li>
         </Skills>
       </div>
 
