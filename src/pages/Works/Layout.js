@@ -24,7 +24,7 @@ export default function Layout(props) {
             <NextDiv to={route}>
               <span>Next</span>
               <h4>{next}</h4>
-              <p className="text-xl lg:text-3xl tracking-wider opacity-50">{textDesc}</p>
+              <p className="text-lg lg:text-2xl tracking-wider opacity-50">{textDesc}</p>
             </NextDiv>
         }
         <Footer />

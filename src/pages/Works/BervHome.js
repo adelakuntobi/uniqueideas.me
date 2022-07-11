@@ -18,7 +18,7 @@ import { BiSearch } from "react-icons/bi"
 import { TbBriefcase, TbUserCircle } from "react-icons/tb"
 
 import Layout, { DivWithHeading, MyRole } from "./Layout";
-import { STEPHAR } from "../../utils/pageUrl";
+import { HOMEPAGE } from "../../utils/pageUrl";
 import styled from "styled-components";
 const UserPersonal = [
   {
@@ -64,9 +64,9 @@ export default function BervHome() {
     <Layout
       title="BervHome Tests"
       banner={BervHomeBG}
-      next="Fintech"
+      next="Everypenny"
       textDesc="Personal Finance Management"
-      route={STEPHAR}>
+      route={HOMEPAGE}>
 
       {/* About Section */}
       <DivWithHeading className="my-6">
