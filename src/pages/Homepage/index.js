@@ -16,12 +16,15 @@ import DressBranding from "../../assets/images/landing/dressBranding.svg"
 import DressManagement from "../../assets/images/landing/dressManagement.svg"
 import Urbn from "../../assets/images/landing/urbn.svg"
 
+
+import Happiness from "../../assets/images/happiness.png"
+
 const HeaderDiv = styled.header`
   height: calc( 100vh - 200px);
 `;
 
-const ReadyToWork = styled.header`
-  border-top: 1px solid #6B7280;
+const ReadyToWork = styled.section`
+  border-top: 1px solid #374151;
   /* border-bottom: 1px solid #6B7280; */
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -124,8 +127,8 @@ const Homepage = () => {
         <Navbar />
         <HeaderDiv className='flex-col lg:flex-row justify-between '>
           <div className='w-7/12'>
-            <h1 className='text-5xl font-bold leading-tight tracking-wide mb-4'>Passionately designing thoughtful, intuitive, and delightful experiences for all human.</h1>
-            <p className='text-primary'>
+            <h1 className='text-3xl lg:text-5xl font-bold leading-tight tracking-wide mb-4'>Passionately designing thoughtful, intuitive, and delightful experiences for all human.</h1>
+            <p className='text-primary text-sm lg:text-base'>
               Hi, I’m <span className='font-medium'>IFY, a product designer passionate</span> about people and how technology enhances our living experience. I love to create products that people love and trust.
             </p>
           </div>
@@ -172,10 +175,14 @@ const Homepage = () => {
 
         {/* Lets get to work */}
         <ReadyToWork id="contact" className='items-center flex-col'>
-          <p className='mb-7 text-4xl'> &#x1F642;</p>
+          <p className='mb-7 text-4xl'>
+            <img src={Happiness} alt="" className='w-10 ' />
+          </p>
           <h5 className='uppercase font-bold text-xs mb-2' style={{ color: "#9CA3AF" }}>Ready to start a project?</h5>
           <h2 className='text-text font-bold text-3xl mb-7'>Let's work together</h2>
-          <button className='bg-primary py-4 px-9 text-black'>Email Me</button>
+          <a href="mailto:Uniqueideas85@gmail.com">
+            <button className='bg-primary py-4 px-9 text-black'>Email Me</button>
+          </a>
         </ReadyToWork>
       </main>
 

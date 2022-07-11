@@ -24,7 +24,7 @@ export default function Layout(props) {
             <NextDiv to={route}>
               <span>Next</span>
               <h4>{next}</h4>
-              <p className="text-xl lg:text-3xl tracking-wider">{textDesc}</p>
+              <p className="text-xl lg:text-3xl tracking-wider opacity-50">{textDesc}</p>
             </NextDiv>
         }
         <Footer />
@@ -103,7 +103,7 @@ export const NextDiv = styled(Link)`
     }
   h4{
     font-weight: 700;
-    font-size: 48px;
+    font-size: 36px;
     line-height: 58px;
     text-transform: capitalize;
   }
@@ -111,7 +111,7 @@ export const NextDiv = styled(Link)`
   @media (max-width: 1024px) { 
     font-size: 14px;
     h4{
-      font-size: 30px;
+      font-size: 22px;
       line-height: 40px;
     }
     span{
