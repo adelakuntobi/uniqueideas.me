@@ -10,6 +10,7 @@ import * as PageURL from "../../utils/pageUrl"
 import { HiOutlineArrowRight } from "react-icons/hi"
 
 import HeaderPhoto from "../../assets/images/photo.svg"
+import Roller from "../../assets/images/roller.png"
 import Stephar from "../../assets/images/landing/stephar.svg"
 import Bervhome from "../../assets/images/landing/bervhome.svg"
 import Everypenny from "../../assets/images/landing/everypenny.svg"
@@ -20,7 +21,7 @@ import Urbn from "../../assets/images/landing/urbn.svg"
 
 import Happiness from "../../assets/images/happiness.png"
 
-const HeaderDiv = styled.header`
+const HeaderDiv = styled.section`
   height: calc( 100vh - 200px);
 `;
 
@@ -133,10 +134,15 @@ const Homepage = () => {
               Hi, I’m <span className='font-medium'>IFY, a product designer passionate</span> about people and how technology enhances our living experience. I love to create products that people love and trust.
             </p>
           </div>
-          <div className='lg:w-5/12 grid place-items-center'>
-            <img src={HeaderPhoto} alt="" />
+          <div className='relative lg:w-5/12 grid place-items-center'>
+            <img src={HeaderPhoto} className="w-full" alt="" />
+            <div className='absolute right-0'>
+              <div className='relative p-12 grid place-items-center'>
+                <img src={Roller} alt="" className='absolute animate-spinn' />
+                <HiOutlineArrowRight className='text-5xl' />
+              </div>
+            </div>
           </div>
-          {/* <HiOutlineArrowRight className='text-5xl' /> */}
         </HeaderDiv>
       </header>
 
