@@ -129,12 +129,12 @@ const Homepage = () => {
         <Navbar />
         <HeaderDiv className='flex-col-reverse gap-y-10 lg:flex-row justify-center lg:justify-between flex items-center '>
           <div className='lg:w-7/12'>
-            <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold !leading-tight tracking-wide mb-4'>Passionately designing thoughtful, intuitive, and delightful experiences for all human.</h1>
-            <p className='text-primary text-lg lg:text-2xl'>
+            <h1  data-aos="fade-right" className='text-3xl md:text-4xl lg:text-5xl font-bold !leading-tight tracking-wide mb-4'>Passionately designing thoughtful, intuitive, and delightful experiences for all human.</h1>
+            <p data-aos="fade-right" data-aos-delay="1000" className='text-primary text-lg lg:text-2xl'>
               Hi, I’m <span className='font-medium'>IFY, a product designer passionate</span> about people and how technology enhances our living experience. I love to create products that people love and trust.
             </p>
           </div>
-          <div className='relative lg:w-5/12 grid place-items-center'>
+          <div data-aos="fade-left" data-aos-delay="1500" className='relative lg:w-5/12 grid place-items-center'>
             <img src={HeaderPhoto} className="w-full" alt="" />
             <div className='absolute right-0'>
               <div className='relative p-12 grid place-items-center'>
@@ -155,7 +155,8 @@ const Homepage = () => {
             {
               SelectedArray.map((item, num) => {
                 return (
-                  <SelectedWork key={num} item={item} />
+                  <SelectedWork key={num} item={item}
+                   />
                 )
               })
             }
