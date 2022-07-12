@@ -24,7 +24,7 @@ export const SelectedWork = (props) => {
   const { item } = props
   return (
     <div  className='flex flex-col-reverse lg:flex-col'>
-      <Link to={item.route}  data-aos="flip-up">
+      <Link to={item.route}>
         {/* <img src={item.img} className="w-full" alt="" /> */}
         <SelectedImg>
           <div className='p-4 md:p-8 lg:p-10 items-center justify-between h-full'>
@@ -52,7 +52,7 @@ export const SelectedWork = (props) => {
       </Link>
       <hr className='mt-3' style={{ borderColor: "#374151" }} />
       <div className='justify-between my-2'>
-        <h4 data-aos="fade-left" className='text-2xl lg:text-3xl font-medium'>{item.title}</h4>
+        <h4 className='text-2xl lg:text-3xl font-medium'>{item.title}</h4>
         {
           item.comingSoon &&
           <p className='coming-soon items-center gap-3 px-3 py-2' style={{ color: "#41BED4", backgroundColor: "#163b42", }}>
