@@ -127,10 +127,21 @@ const Homepage = () => {
     <div className='container relative'>
       <header className='min-h-screen'>
         <Navbar />
-        <HeaderDiv className='flex-col gap-y-10 lg:flex-row justify-center lg:justify-between flex items-center '>
+        <HeaderDiv className='flex-col gap-y-6 lg:flex-row lg:justify-between flex items-center '>
 
           <div className='lg:w-7/12'>
-            <h1 data-aos="fade-right" className='text-3xl md:text-4xl lg:text-5xl font-bold !leading-tight tracking-wide mb-4'>Passionately designing thoughtful, intuitive, and delightful experiences for all human.</h1>
+            <h1 data-aos="fade-right"
+              className='text-3xl md:text-4xl lg:text-5xl font-bold !leading-tight tracking-wide mb-4'>
+              Passionately designing {" "}
+              <span className="type">
+                <span>
+                  <span>thoughtful,</span>
+                  <span>intuitive,</span>
+                  <span>delightful</span>
+                </span>
+              </span>
+              {" "} experiences for all human.
+            </h1>
             <p data-aos="fade-right" data-aos-delay="1000" className='text-primary text-lg lg:text-2xl hidden lg:block'>
               Hi, I’m <span className='font-medium'>IFY, a product designer passionate</span> about people and how technology enhances our living experience. I love to create products that people love and trust.
             </p>
