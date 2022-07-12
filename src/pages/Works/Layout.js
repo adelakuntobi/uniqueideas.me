@@ -13,8 +13,12 @@ export default function Layout(props) {
         <Navbar />
       </div>
       <div className="container my-5">
-        <h2 className="font-bold text-3xl lg:text-5xl mb-8">{title}</h2>
-        <img src={banner} alt="" className="w-full" />
+        <h2
+          data-aos="fade-left"
+          className="font-bold text-3xl lg:text-5xl mb-8">{title}</h2>
+        <img data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          src={banner} alt="" className="w-full" />
         {children}
         {
           home ?

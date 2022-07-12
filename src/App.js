@@ -10,10 +10,21 @@ import Stephar from './pages/Works/Stephar';
 import Urbn from './pages/Works/Urbn';
 import ScrollToTop from './utils/ScrollToTop';
 import * as PageURL from "./utils/pageUrl"
+import AOS from 'aos';
+import 'aos/dist/aos.css';                                         
+
+
+AOS.init({
+  offset: 200,
+  duration: 1500,
+  delay: 500,
+});
 
 function App() {
+
+  
   return (
-    <div className="App">
+    <div className="App relative">
       <ScrollToTop />
       <Routes>
         <Route exact path={PageURL.HOMEPAGE} element={<Homepage />} />

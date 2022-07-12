@@ -1,11 +1,11 @@
-body{
+body {
   background: #030303;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-nav .active{
+nav .active {
   font-weight: 900;
 }
-.animate-spinn{
-  animation: spin 10s linear infinite;	
+.animate-spin {
+  animation-duration: 10s;
 }

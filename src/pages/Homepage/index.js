@@ -138,7 +138,7 @@ const Homepage = () => {
             <img src={HeaderPhoto} className="w-full" alt="" />
             <div className='absolute right-0'>
               <div className='relative p-12 grid place-items-center'>
-                <img src={Roller} alt="" className='absolute animate-spinn' />
+                <img src={Roller} alt="" className='absolute animate-spin' />
                 <HiOutlineArrowRight className='text-5xl' />
               </div>
             </div>

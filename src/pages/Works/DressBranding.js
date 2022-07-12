@@ -16,22 +16,26 @@ export default function Dress() {
       textDesc=""
       route={URBN}>
       <DressDiv>
-        <p>Dress Measurement app as the name implies is an app that let’s you take, store and send your clothing and body measurements anywhere. It guides you on how to take your body measurements and stores them in the cloud for easy future reference.
+        <p data-aos="fade-up" data-aos-delay="1000" >Dress Measurement app as the name implies is an app that let’s you take, store and send your clothing and body measurements anywhere. It guides you on how to take your body measurements and stores them in the cloud for easy future reference.
         </p>
-        <p>
+        <p data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom" data-aos-delay="1350">
           It is targeted at enterprenuers in the fashion industry and individuals who would love to have their clothing measurements handy
         </p>
       </DressDiv>
       {[...Array(2)].map((x, i) =>
         <img
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
           src={require(`../../assets/images/dress/dress${i + 2}.png`)}
           alt="" key={i + 2} className="w-full" />
       )}
       <DressDiv>
-        <p>
+        <p data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom" >
           The goal of the new identity was to create an iconic mark that embodies the brand’s message which is , ‘’making the experience for taking, storing and sharing measurements as seamless as possible’’.
         </p>
-        <p>
+        <p data-aos="fade-up" data-aos-delay="1500">
           The new design direction revolved around geometry and minimalism while introducing components revolving around a human body being measured which also accomodated the brands acronyms, DM. This new identity is simple, unique and resonates better with the brands audience
         </p>
       </DressDiv>
@@ -41,7 +45,7 @@ export default function Dress() {
           alt="" key={i + 4} className="w-full" />
       )}
       <DressDiv>
-        <p>The identity was duplicated to form a pattern that’s unique to the brand. It can be applied across all brand assets ranging from social media to merchandise, stationaries, prints, packaging, etc</p>
+        <p data-aos="fade-up" >The identity was duplicated to form a pattern that’s unique to the brand. It can be applied across all brand assets ranging from social media to merchandise, stationaries, prints, packaging, etc</p>
       </DressDiv>
       {[...Array(2)].map((x, i) =>
         <img

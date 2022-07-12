@@ -72,11 +72,13 @@ export default function BervHome() {
 
       {/* About Section */}
       <DivWithHeading className="my-6">
-        <h3>About BervHome Test</h3>
-        <p>
+        <h3 data-aos="fade-left">About BervHome Test</h3>
+        <p data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom">
           <b>BervHomeTests</b> is an impactful health innovation granting people access to easier analysis of health conditions without having them wait through long queues. At home laboratory testing is clearly private and convenient and have proven to be reliable. One can have series of important tests without leaving the comfort of their home.
         </p>
-        <p>
+        <p data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom" data-aos-delay="1000">
           Here, BervHomeTests sends an expert team that will get to you at a pre-scheduled time, conduct the test and avail the results within a timeframe of 24-48 hours.
         </p>
       </DivWithHeading>
@@ -92,21 +94,33 @@ export default function BervHome() {
       <div className="my-12">
 
         <DivWithHeading>
-          <h3 className="flex items-center gap-4">
+          <h3 className="flex items-center gap-4"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="800">
             <div className=" w-9 h-9 grid place-items-center bg-white rounded-full">
               <BiSearch className="text-black text-xl" />
             </div>
             Why BervHomeTests?</h3>
-          <p className=" leading-6 lg:!leading-10 lg:!mb-8">
+          <p
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="1000"
+            className=" leading-6 lg:!leading-10 lg:!mb-8">
             Physical visits to the diagnostics center are usually time consuming. Most times, we exhaust our day sitting patiently waiting at the doctor’s. Other times we walk away. Even times when we decide to schedule, there are usually inefficiences that stands as blockers.
           </p>
-          <p className="  leading-6 lg:!leading-10">
+          <p data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="1500"
+            className="leading-6 lg:!leading-10">
             This has contributed to a great extent to the rate of deterioration of the human health as most individuals purposely miss their checkups or pathological lab appointments because its stressful to get them done.
           </p>
         </DivWithHeading>
         <DivWithHeading>
           <h3>Design Strategy and Solution</h3>
-          <div className="flex items-start gap-6 mb-8 mt-6">
+          <div data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            className="flex items-start gap-6 mb-8 mt-6">
             <div className=" h-16 w-16 p-4 hidden lg:grid place-items-center rounded-full" style={{ backgroundColor: "#FEF3C7" }}>
               <TbBriefcase className="text-black text-3xl" />
             </div>
@@ -115,7 +129,10 @@ export default function BervHome() {
               <p>In a world of complexities and constant thrive, being in a perfect state of health is top priority. Berv Diagnostics Center aims to help you actualize your health goals without hassle by providing health sustaining facilities to you at the comfort of your home. The aim is to help you live healthier for longer.</p>
             </div>
           </div>
-          <div className="flex items-start gap-6">
+          <div data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="1500"
+            className="flex items-start gap-6">
             <div className=" h-16 w-16 p-4 hidden lg:grid place-items-center rounded-full" style={{ backgroundColor: "#FEF3C7" }}>
               <TbUserCircle className="text-black text-3xl" />
             </div>
@@ -134,26 +151,36 @@ export default function BervHome() {
 
       <DivWithHeading className="">
         <h3>Target Audience</h3>
-        <p>
-          <b>BervHome Tests</b> is primariliy focused on three major stakeholders in the health sector;  the patient, the lab centers, the doctors. BervHomeTest is creating an innovation that promotes good health by making all that humanity needs to keep their body in check  like home visit lab tests and access to professional doctors available. </p>
+        <p data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        ><b>BervHome Tests</b> is primariliy focused on three major stakeholders in the health sector;  the patient, the lab centers, the doctors. BervHomeTest is creating an innovation that promotes good health by making all that humanity needs to keep their body in check  like home visit lab tests and access to professional doctors available. </p>
       </DivWithHeading>
       <DivWithHeading className="">
         <h3>Market and Competitive Analysis</h3>
-        <p className="!mb-10">
+        <p className="!mb-10" 
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
           At-Home-Lab-Tests is one of the futuristic health innovations in practice today. To have access to a wide range of analysis, determine our lab markers and blood results without the wait at the doctors, at the lab or having to meet a lot of persons is really impressive.
         </p>
-        <p>
+        <p data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="1500">
           Building a product like BervHomeTest required that we have to properly understand the industry and competitive forces within the industry. I had questions that i got clarity on by carefully analysing existing platforms and making hypothesis on discoveries made.
         </p>
       </DivWithHeading>
       <DivWithHeading>
         <p className="!mb-4">Brands I reviewed include:</p>
         <div className="grid gap-x-2 gap-y-4 grid-cols-2 md:grid-cols-5 place-items-center">
-          <img src={iCliniq} alt="" />
-          <img src={practo} alt="" />
-          <img src={labbox} alt="" />
-          <img src={cult} alt="" />
-          <img src={letsgetchecked} alt="" />
+          <img data-aos="fade-left"
+            data-aos-delay="1000" src={iCliniq} alt="" />
+          <img data-aos="fade-left"
+            data-aos-delay="1500" src={practo} alt="" />
+          <img data-aos="fade-left"
+            data-aos-delay="2000" src={labbox} alt="" />
+          <img data-aos="fade-left"
+            data-aos-delay="2500" src={cult} alt="" />
+          <img data-aos="fade-left"
+            data-aos-delay="3000" src={letsgetchecked} alt="" />
         </div>
       </DivWithHeading>
 
