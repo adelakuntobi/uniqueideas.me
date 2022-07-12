@@ -14,7 +14,7 @@ export default function Experience() {
             <p>User Experience Designer</p>
           </ExperienceDiv>
           <ExperienceDiv>
-            <p>Crownswap, <span>September - Februrary 2021</span></p>
+            <p>Crownswap, <span>September 2020 - Februrary 2021</span></p>
             <p>User Experience Designer - Contract</p>
           </ExperienceDiv>
           <ExperienceDiv>
