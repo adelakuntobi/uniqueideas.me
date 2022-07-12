@@ -103,7 +103,7 @@ const SelectedImg = styled.div`
     @media (max-width: 1024px) { 
       height: 230px;
    }
-    @media (max-width: 768px) { 
+   /* @media (max-width: 768px) { 
       height: 200px;
-   }
+   } */
   `;

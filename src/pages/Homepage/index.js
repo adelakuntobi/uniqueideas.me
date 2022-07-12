@@ -17,7 +17,7 @@ import Everypenny from "../../assets/images/landing/everypenny.svg"
 import DressBranding from "../../assets/images/landing/dressBranding.svg"
 import DressManagement from "../../assets/images/landing/dressManagement.svg"
 import Urbn from "../../assets/images/landing/urbn.svg"
-
+import { Link } from "react-scroll"
 
 import Happiness from "../../assets/images/happiness.png"
 
@@ -130,8 +130,7 @@ const Homepage = () => {
         <HeaderDiv className='flex-col gap-y-6 lg:flex-row lg:justify-between flex items-center '>
 
           <div className='lg:w-7/12'>
-            <h1 data-aos="fade-right"
-              className='text-3xl md:text-4xl lg:text-5xl font-bold !leading-tight tracking-wide mb-4'>
+            <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold !leading-tight tracking-wide mb-4'>
               Passionately designing {" "}
               <span className="type">
                 <span>
@@ -142,11 +141,19 @@ const Homepage = () => {
               </span>
               {" "} experiences for all human.
             </h1>
-            <p data-aos="fade-right" data-aos-delay="1000" className='text-primary text-lg lg:text-2xl hidden lg:block'>
+            <p className='text-primary text-lg lg:text-2xl hidden lg:block'>
               Hi, I’m <span className='font-medium'>IFY, a product designer passionate</span> about people and how technology enhances our living experience. I love to create products that people love and trust.
             </p>
           </div>
-          <div data-aos="fade-left" data-aos-delay="1500" className='relative lg:w-5/12 grid place-items-center'>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1500}
+            isDynamic={true}
+            ignoreCancelEvents={false}
+            spyThrottle={500} className='relative lg:w-5/12 grid place-items-center'>
             <img src={HeaderPhoto} className="w-full" alt="" />
             <div className='absolute right-0 bottom-10'>
               <div className='relative p-12 grid place-items-center'>
@@ -154,7 +161,7 @@ const Homepage = () => {
                 <HiOutlineArrowRight className='text-5xl' />
               </div>
             </div>
-          </div>
+          </Link>
           <p data-aos="fade-right" data-aos-delay="1000" className='text-primary text-lg lg:text-2xl block lg:hidden'>
             Hi, I’m <span className='font-medium'>IFY, a product designer passionate</span> about people and how technology enhances our living experience. I love to create products that people love and trust.
           </p>
