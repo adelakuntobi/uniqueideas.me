@@ -28,7 +28,7 @@ export const SelectedWork = (props) => {
         {/* <img src={item.img} className="w-full" alt="" /> */}
         <SelectedImg>
           <div className='p-4 md:p-8 lg:p-10 items-center justify-between h-full'>
-            <div className='justify-between h-full flex-col !items-start'>
+            <div className='gap-4 justify-between h-full flex-col !items-start'>
               <span className='case'>{item.case}</span>
               <div className=' md:w-52'>
                 <span style={{ backgroundColor: item.color }} className='line'></span>

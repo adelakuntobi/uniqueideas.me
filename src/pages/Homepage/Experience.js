@@ -14,7 +14,7 @@ export default function Experience() {
             <p>User Experience Designer</p>
           </ExperienceDiv>
           <ExperienceDiv data-aos="fade-up-right" data-aos-delay="1000" >
-            <p>Crownswap, <span>September 2020 - Februrary 2021</span></p>
+            <p>Crownswap, <span>September 2020 - February 2021</span></p>
             <p>User Experience Designer - Contract</p>
           </ExperienceDiv>
           <ExperienceDiv data-aos="fade-up-right" data-aos-delay="1500" >
