@@ -17,7 +17,7 @@ const Navbar = () => {
           <CgClose className={`absolute top-10 right-10 text-2xl cursor-pointer ${openNav ? "block" : "hidden"}`}
             onClick={() => setOpenNav(false)} />
           <ul className={` gap-12 ${openNav ? "flex-col lg:flex-row flex items-center" : "hidden lg:flex"}`}>
-            <li className="cursor-pointer uppercase active">
+            <li className="cursor-pointer uppercase">
               <ReactLink to="/">Home</ReactLink>
             </li>
             <Link activeClass="active"

@@ -219,7 +219,7 @@ export default function BervHome() {
         <h3 className="text-center">User Interface Screens</h3>
         {/* <img src={BervGif} className="w-full" alt="" /> */}
         <video autoPlay={true} loop={true} controls={false}>
-        <source src={BervVideo}  />
+          <source src={BervVideo} type="video/mp4" />
         </video>
 
       </DivWithHeading>

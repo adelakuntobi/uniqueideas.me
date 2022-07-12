@@ -9,6 +9,7 @@ import Experience from './Experience';
 import * as PageURL from "../../utils/pageUrl"
 import { HiOutlineArrowRight } from "react-icons/hi"
 
+import HeaderPhoto from "../../assets/images/photo.svg"
 import Stephar from "../../assets/images/landing/stephar.svg"
 import Bervhome from "../../assets/images/landing/bervhome.svg"
 import Everypenny from "../../assets/images/landing/everypenny.svg"
@@ -125,16 +126,17 @@ const Homepage = () => {
     <div className='container relative'>
       <header className='min-h-screen'>
         <Navbar />
-        <HeaderDiv className='flex-col lg:flex-row justify-center lg:justify-between flex items-center '>
+        <HeaderDiv className='flex-col-reverse gap-y-10 lg:flex-row justify-center lg:justify-between flex items-center '>
           <div className='lg:w-7/12'>
-            <h1 className='text-3xl lg:text-5xl font-bold leading-tight tracking-wide mb-4'>Passionately designing thoughtful, intuitive, and delightful experiences for all human.</h1>
-            <p className='text-primary text-base lg:text-lg tracking-wideimage.png'>
+            <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold !leading-tight tracking-wide mb-4'>Passionately designing thoughtful, intuitive, and delightful experiences for all human.</h1>
+            <p className='text-primary text-lg lg:text-2xl tracking-wideimage.png'>
               Hi, I’m <span className='font-medium'>IFY, a product designer passionate</span> about people and how technology enhances our living experience. I love to create products that people love and trust.
             </p>
           </div>
           <div className='lg:w-5/12 grid place-items-center'>
-            <HiOutlineArrowRight className='text-5xl' />
+            <img src={HeaderPhoto} alt="" />
           </div>
+          {/* <HiOutlineArrowRight className='text-5xl' /> */}
         </HeaderDiv>
       </header>
 

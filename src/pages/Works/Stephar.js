@@ -3,7 +3,7 @@
 import { StepharBG } from "../../assets/images"
 import { Landing } from "../../assets/images"
 import { Chart } from "../../assets/images"
-import { Wireframe } from "../../assets/images"
+import WireframeVideo from "../../assets/videos/Stephar.mp4"
 
 import { StephInterface1 } from "../../assets/images"
 import { StephInterface2 } from "../../assets/images"
@@ -16,9 +16,9 @@ import Layout, { DivWithHeading, MyRole } from "./Layout";
 export default function Stephar() {
   return (
     <Layout
-    title="Stephar"
-    banner={StepharBG}
-    home={true}>
+      title="Stephar"
+      banner={StepharBG}
+      home={true}>
 
       {/* About Section */}
       <DivWithHeading>
@@ -80,7 +80,9 @@ export default function Stephar() {
           I focused primarily on creating a simple to use yet intuitive interface that accomodates all the key features of Stephar.
         </p>
       </DivWithHeading>
-      <img src={Wireframe} alt="" className="w-full my-10" />
+      <video autoPlay={true} loop={true} controls={false}>
+        <source src={WireframeVideo} type="video/mp4" />
+      </video>
       <DivWithHeading>
         <h3>App Interface</h3>
         <p>

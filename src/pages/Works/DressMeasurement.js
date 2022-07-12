@@ -1,9 +1,9 @@
 import Layout, { DivWithHeading, MyRole } from './Layout'
 import Banner from "../../assets/images/dressMeasurement/banner.png"
-import Measurement1 from "../../assets/images/dressMeasurement/measurement1.svg"
-import Measurement2 from "../../assets/images/dressMeasurement/measurement2.svg"
-import Measurement3 from "../../assets/images/dressMeasurement/measurement3.svg"
-import Measurement4 from "../../assets/images/dressMeasurement/measurement4.svg"
+import Measurement1 from "../../assets/videos/Custom-Measurement.mp4"
+import Measurement2 from "../../assets/videos/Reference-Measurement.mp4"
+import Measurement3 from "../../assets/videos/iCloud-Submenu.mp4"
+import Measurement4 from "../../assets/videos/Page-Settings.mp4"
 import { BERVHOME, DRESS_BRANDING } from '../../utils/pageUrl'
 import { Link } from 'react-router-dom'
 
@@ -70,7 +70,9 @@ export default function DressMeasurement() {
         <p>
           This feature was made available to only premium subscribers. Free users get to enjoy measurements made available in default pages.
         </p>
-        <img src={Measurement1} alt="" className='mt-6' />
+        <video className='mt-6' autoPlay={true} loop={true} controls={false}>
+          <source src={Measurement1} type="video/mp4" />
+        </video>
       </DivWithHeading>
 
 
@@ -79,7 +81,9 @@ export default function DressMeasurement() {
       <DivWithHeading>
         <h3>Reference Measurements</h3>
         <p>This feature is similar to custom measurement. It gives the user clues on areas to focus on. It is a measurement with no visible label that guides the user in identifying the measurement they are taking by showing them a greyed out measurement nearby. It’s a way of visually telling the user, “hey, we are focusing on the knee bone and not the thigh”.</p>
-        <img src={Measurement2} alt="" className='mt-6' />
+        <video className='mt-6' autoPlay={true} loop={true} controls={false}>
+          <source src={Measurement2} type="video/mp4" />
+        </video>
       </DivWithHeading>
 
 
@@ -104,21 +108,24 @@ export default function DressMeasurement() {
             <span>Save Local Backup:</span> Uploads information on the local device to the cloud.
           </li>
         </ul>
-        <img src={Measurement3} alt="" className='w-full' />
+        <video className='mt-6' autoPlay={true} loop={true} controls={false}>
+          <source src={Measurement3} type="video/mp4" />
+        </video>
       </DivWithHeading>
 
 
       <DivWithHeading>
         <h3>Page Settings</h3>
         <p>This feature lets you turn on/off pages so that only what you want to see is visible to a profile. This feature is only available to premium subscribers.</p>
-        <img src={Measurement4} alt="" className='mt-6' />
+        <video className='mt-6' autoPlay={true} loop={true} controls={false}>
+          <source src={Measurement4} type="video/mp4" />
+        </video>
       </DivWithHeading>
 
 
       <DivWithHeading>
         <h3>Outcome</h3>
         <p>Working with a cross-functional team, identifying gaps and figuring out suitable solutions backed with research to meet them have helped us put together a usable product.  After a few iterations and releases we got to a well-performing baseline. The foundation was in place so we could gather valuable data, optimise the journey, and start to introduce other core features to the journey.</p>
-        <img src={Measurement2} alt="" className='mt-6' />
       </DivWithHeading>
 
       <DivWithHeading className='animate-bounce'>
