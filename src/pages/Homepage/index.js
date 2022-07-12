@@ -127,22 +127,26 @@ const Homepage = () => {
     <div className='container relative'>
       <header className='min-h-screen'>
         <Navbar />
-        <HeaderDiv className='flex-col-reverse gap-y-10 lg:flex-row justify-center lg:justify-between flex items-center '>
+        <HeaderDiv className='flex-col gap-y-10 lg:flex-row justify-center lg:justify-between flex items-center '>
+
           <div className='lg:w-7/12'>
-            <h1  data-aos="fade-right" className='text-3xl md:text-4xl lg:text-5xl font-bold !leading-tight tracking-wide mb-4'>Passionately designing thoughtful, intuitive, and delightful experiences for all human.</h1>
-            <p data-aos="fade-right" data-aos-delay="1000" className='text-primary text-lg lg:text-2xl'>
+            <h1 data-aos="fade-right" className='text-3xl md:text-4xl lg:text-5xl font-bold !leading-tight tracking-wide mb-4'>Passionately designing thoughtful, intuitive, and delightful experiences for all human.</h1>
+            <p data-aos="fade-right" data-aos-delay="1000" className='text-primary text-lg lg:text-2xl hidden lg:block'>
               Hi, I’m <span className='font-medium'>IFY, a product designer passionate</span> about people and how technology enhances our living experience. I love to create products that people love and trust.
             </p>
           </div>
           <div data-aos="fade-left" data-aos-delay="1500" className='relative lg:w-5/12 grid place-items-center'>
             <img src={HeaderPhoto} className="w-full" alt="" />
-            <div className='absolute right-0'>
+            <div className='absolute right-0 bottom-10'>
               <div className='relative p-12 grid place-items-center'>
                 <img src={Roller} alt="" className='absolute animate-spin' />
                 <HiOutlineArrowRight className='text-5xl' />
               </div>
             </div>
           </div>
+          <p data-aos="fade-right" data-aos-delay="1000" className='text-primary text-lg lg:text-2xl block lg:hidden'>
+            Hi, I’m <span className='font-medium'>IFY, a product designer passionate</span> about people and how technology enhances our living experience. I love to create products that people love and trust.
+          </p>
         </HeaderDiv>
       </header>
 
@@ -156,7 +160,7 @@ const Homepage = () => {
               SelectedArray.map((item, num) => {
                 return (
                   <SelectedWork key={num} item={item}
-                   />
+                  />
                 )
               })
             }

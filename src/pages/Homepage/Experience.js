@@ -9,19 +9,19 @@ export default function Experience() {
       <div className='w-full lg:w-1/2'>
         <TitleHeading>Experience</TitleHeading>
         <div>
-          <ExperienceDiv>
+          <ExperienceDiv data-aos="fade-up-right" data-aos-delay="500">
             <p>Aeeiee.inc, <span>February 2021 - today</span></p>
             <p>User Experience Designer</p>
           </ExperienceDiv>
-          <ExperienceDiv>
+          <ExperienceDiv data-aos="fade-up-right" data-aos-delay="1000" >
             <p>Crownswap, <span>September 2020 - Februrary 2021</span></p>
             <p>User Experience Designer - Contract</p>
           </ExperienceDiv>
-          <ExperienceDiv>
+          <ExperienceDiv data-aos="fade-up-right" data-aos-delay="1500" >
             <p>HNGi7, <span>May 2020 - August 2020</span></p>
             <p>User Experience Intern</p>
           </ExperienceDiv>
-          <ExperienceDiv>
+          <ExperienceDiv data-aos="fade-up-right" data-aos-delay="2000" >
             <p>Innovation Growth Hub, <span>Dec 2019 - March 2020</span></p>
             <p>User Experience Intern</p>
           </ExperienceDiv>
@@ -30,12 +30,12 @@ export default function Experience() {
       <div className='w-full lg:w-1/2'>
         <TitleHeading>Skills</TitleHeading>
         <Skills>
-          <li>Visual Design</li>
-          <li>Interface Design</li>
-          <li>User Experience Design</li>
-          <li>User Research</li>
-          <li>Usability Testing</li>
-          <li>Product Strategy </li>
+          <li  data-aos="fade-up-left" >Visual Design</li>
+          <li data-aos="fade-up-left" data-aos-delay="500">Interface Design</li>
+          <li data-aos="fade-up-left" data-aos-delay="750">User Experience Design</li>
+          <li data-aos="fade-up-left" data-aos-delay="1000">User Research</li>
+          <li data-aos="fade-up-left" data-aos-delay="1250">Usability Testing</li>
+          <li data-aos="fade-up-left" data-aos-delay="1500">Product Strategy </li>
         </Skills>
       </div>
 

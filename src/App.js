@@ -17,14 +17,14 @@ import 'aos/dist/aos.css';
 AOS.init({
   offset: 200,
   duration: 1500,
-  delay: 500,
+  delay: 250,
 });
 
 function App() {
 
   
   return (
-    <div className="App relative">
+    <div className="App relative overflow-x-hidden">
       <ScrollToTop />
       <Routes>
         <Route exact path={PageURL.HOMEPAGE} element={<Homepage />} />
