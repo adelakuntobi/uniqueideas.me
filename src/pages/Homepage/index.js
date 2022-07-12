@@ -45,7 +45,8 @@ const Homepage = () => {
   useEffect(() => {
     new Typewriter("#type", {
       loop: true,
-      delay: 75,
+      deleteSpeed: 100,
+      delay: 200,
       strings: ['thoughtful', 'intuitive', 'delightful'],
       autoStart: true,
       cursor: "",
