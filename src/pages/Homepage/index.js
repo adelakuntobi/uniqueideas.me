@@ -20,6 +20,12 @@ import Urbn from "../../assets/images/landing/urbn.svg"
 import { Link } from "react-scroll"
 
 import Happiness from "../../assets/images/happiness.png"
+import Typewriter from 'typewriter-effect/dist/core';
+import { useEffect, useState } from 'react';
+import Loader from '../../components/Loader';
+
+
+
 
 const HeaderDiv = styled.section`
   height: calc( 100vh - 200px);
@@ -33,7 +39,19 @@ const ReadyToWork = styled.section`
 `;
 
 
+
 const Homepage = () => {
+  const [loaded, setLoaded] = useState(false)
+  useEffect(() => {
+    new Typewriter("#type", {
+      loop: true,
+      delay: 75,
+      strings: ['thoughtful', 'intuitive', 'delightful'],
+      autoStart: true,
+      cursor: "",
+    });
+  }, [])
+  
   const SelectedArray = [
     {
       img: selected,
@@ -125,6 +143,7 @@ const Homepage = () => {
 
   return (
     <div className='container relative'>
+      {!loaded && <Loader />}
       <header className='min-h-screen'>
         <Navbar />
         <HeaderDiv className='flex-col gap-y-6 lg:flex-row lg:justify-between flex items-center '>
@@ -132,36 +151,37 @@ const Homepage = () => {
           <div className='lg:w-7/12'>
             <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold !leading-tight tracking-wide mb-4'>
               Passionately designing {" "}
-              <span className="type">
+              <span id="type"></span>
+              {/* <span id="type">
                 <span>
                   <span>thoughtful,</span>
                   <span>intuitive,</span>
                   <span>delightful</span>
                 </span>
-              </span>
+              </span> */}
               {" "} experiences for all human.
             </h1>
             <p className='text-primary text-lg lg:text-2xl hidden lg:block'>
               Hi, I’m <span className='font-medium'>IFY, a product designer passionate</span> about people and how technology enhances our living experience. I love to create products that people love and trust.
             </p>
           </div>
-          <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={1500}
-            isDynamic={true}
-            ignoreCancelEvents={false}
-            spyThrottle={500} className='relative lg:w-5/12 grid place-items-center'>
-            <img src={HeaderPhoto} className="w-full" alt="" />
-            <div className='absolute right-0 bottom-10'>
+          <div className='relative lg:w-5/12 grid place-items-center'>
+            <img src={HeaderPhoto} className="w-full" alt="" onLoad={() => setLoaded(true)} />
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1500}
+              isDynamic={true}
+              ignoreCancelEvents={false}
+              spyThrottle={500} className=' cursor-pointer absolute right-0 bottom-10'>
               <div className='relative p-12 grid place-items-center'>
                 <img src={Roller} alt="" className='absolute animate-spin' />
                 <HiOutlineArrowRight className='text-5xl' />
               </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
           <p data-aos="fade-right" data-aos-delay="1000" className='text-primary text-lg lg:text-2xl block lg:hidden'>
             Hi, I’m <span className='font-medium'>IFY, a product designer passionate</span> about people and how technology enhances our living experience. I love to create products that people love and trust.
           </p>
