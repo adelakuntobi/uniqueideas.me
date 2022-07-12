@@ -27,7 +27,7 @@ export const SelectedWork = (props) => {
       <Link to={item.route} >
         {/* <img src={item.img} className="w-full" alt="" /> */}
         <SelectedImg>
-          <div className='p-10 items-center justify-between h-full'>
+          <div className='p-4 md:p-8 lg:p-10 items-center justify-between h-full'>
             <div className='justify-between h-full flex-col !items-start'>
               <span className='case'>{item.case}</span>
               <div className=' w-52'>
@@ -44,14 +44,14 @@ export const SelectedWork = (props) => {
                 }
               </ul>
             </div>
-            <img src={item.imageImg} alt="" className='' />
+            <img src={item.imageImg} alt="" className='w-24 lg:w-1/4' />
           </div>
-          <img src={RightBG} alt="" className='absolute right-0 top-10' />
-          <img src={BottomBG} alt="" className='absolute bottom-0 right-12' />
+          <img src={RightBG} alt="" className='absolute right-0 top-10 w-28 md:w-32' />
+          <img src={BottomBG} alt="" className='absolute bottom-0 right-6 md:right-12 w-40 md:w-auto' />
         </SelectedImg>
       </Link>
-      {/* <hr className='my-3' style={{ color: "#9CA3AF" }} /> */}
-      <div className='justify-between my-3'>
+      <hr className='mt-3' style={{ borderColor: "#374151" }} />
+      <div className='justify-between my-2'>
         <h4 className='text-2xl lg:text-3xl font-medium'>{item.title}</h4>
         {
           item.comingSoon &&
@@ -75,7 +75,7 @@ export const SelectedWork = (props) => {
 
 }
 const SelectedImg = styled.div`
-    height: 290px;
+    height: 250px;
     background: #15181E;
     position: relative;
  
@@ -100,5 +100,10 @@ const SelectedImg = styled.div`
       font-size: 7.27401px;
       line-height: 9px;
     }
-  
+    @media (max-width: 1024px) { 
+      height: 200px;
+   }
+    @media (max-width: 768px) { 
+      height: 230px;
+   }
   `;

@@ -86,7 +86,7 @@ export default function DressMeasurement() {
       {/* IMAGE */}
 
       <DivWithHeading>
-        <h3>iCloud Submenu</h3>
+        <h3 className='normal-case'>iCloud Submenu</h3>
         <p>
           The initial approach to the iCloud functionality was to have the activity running in the background. This leaves the user completely clueless on the status of their upload or download. Upon iteration, I introduced a submenu. This provided specific updates on the status of the following:
         </p>

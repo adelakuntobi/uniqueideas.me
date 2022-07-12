@@ -10,7 +10,7 @@ export default function Experience() {
         <TitleHeading>Experience</TitleHeading>
         <div>
           <ExperienceDiv>
-            <p>Aeeiee.inc, <span>Februrary 2021 - today</span></p>
+            <p>Aeeiee.inc, <span>February 2021 - today</span></p>
             <p>User Experience Designer</p>
           </ExperienceDiv>
           <ExperienceDiv>

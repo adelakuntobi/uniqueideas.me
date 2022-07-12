@@ -128,12 +128,11 @@ const Homepage = () => {
         <HeaderDiv className='flex-col lg:flex-row justify-center lg:justify-between flex items-center '>
           <div className='lg:w-7/12'>
             <h1 className='text-3xl lg:text-5xl font-bold leading-tight tracking-wide mb-4'>Passionately designing thoughtful, intuitive, and delightful experiences for all human.</h1>
-            <p className='text-primary text-sm lg:text-base'>
+            <p className='text-primary text-base lg:text-lg tracking-wideimage.png'>
               Hi, I’m <span className='font-medium'>IFY, a product designer passionate</span> about people and how technology enhances our living experience. I love to create products that people love and trust.
             </p>
           </div>
           <div className='lg:w-5/12 grid place-items-center'>
-
             <HiOutlineArrowRight className='text-5xl' />
           </div>
         </HeaderDiv>

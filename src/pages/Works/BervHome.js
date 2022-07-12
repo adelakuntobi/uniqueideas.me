@@ -4,7 +4,7 @@ import {
   BervHomeBG,
   cult, iCliniq,
   labbox, letsgetchecked,
-  practo, workflow, architecture, BervGif,
+  practo, workflow, architecture,
   BervGroup1, BervGroup2,
 
   wireframe1, wireframe2, wireframe3, wireframe4, wireframe5,
@@ -20,6 +20,8 @@ import { TbBriefcase, TbUserCircle } from "react-icons/tb"
 import Layout, { DivWithHeading, MyRole } from "./Layout";
 import { HOMEPAGE } from "../../utils/pageUrl";
 import styled from "styled-components";
+
+import BervVideo from "../../assets/videos/Berv.mp4"
 const UserPersonal = [
   {
     img: User1,
@@ -175,7 +177,7 @@ export default function BervHome() {
                 <UserPersona key={user.age}>
                   <div className="imgAndText">
                     <img src={user.img} alt="" />
-                    <div className=" ">
+                    <div className="mt-2 ">
                       <h5>{user.fullName}</h5>
                       <p className="!my-1" style={{ color: "#D1E2C0" }}>{user.occupation}</p>
                       <p>{user.age} years</p>
@@ -215,7 +217,10 @@ export default function BervHome() {
 
       <DivWithHeading className=" !max-w-5xl mx-auto">
         <h3 className="text-center">User Interface Screens</h3>
-        <img src={BervGif} className="w-full" alt="" />
+        {/* <img src={BervGif} className="w-full" alt="" /> */}
+        <video autoPlay={true} loop={true} controls={false}>
+        <source src={BervVideo}  />
+        </video>
 
       </DivWithHeading>
 
