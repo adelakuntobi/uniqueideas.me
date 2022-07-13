@@ -177,7 +177,7 @@ const Homepage = () => {
               isDynamic={true}
               ignoreCancelEvents={false}
               spyThrottle={500} className=' cursor-pointer absolute right-0 bottom-10'>
-              <div className='relative p-12 grid place-items-center'>
+              <div className='relative p-6 lg:p-12 grid place-items-center'>
                 <img src={Roller} alt="" className='absolute animate-spin' />
                 <HiOutlineArrowRight className='text-5xl' />
               </div>

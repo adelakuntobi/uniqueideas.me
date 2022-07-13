@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="w-full shadow-lg bg-black bg-opacity-60 top-0 ">
       <div className="pt-8 pb-4 lg:pb-8 justify-between !px-0 shadow-lg bg-black bg-opacity-60">
         <ReactLink to="/">
-          <img src={Logo} alt="" />
+          <img src={Logo} alt="" className="w-6 lg:w-10" />
         </ReactLink>
         <div className={openNav ? `h-screen lg:h-auto w-full lg:w-auto grid place-items-center fixed lg:relative z-50 top-0 left-0 bg-black` : ""}>
           <CgClose className={`absolute top-10 right-10 text-2xl cursor-pointer ${openNav ? "block" : "hidden"}`}
