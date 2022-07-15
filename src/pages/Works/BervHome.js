@@ -18,7 +18,7 @@ import { BiSearch } from "react-icons/bi"
 import { TbBriefcase, TbUserCircle } from "react-icons/tb"
 
 import Layout, { DivWithHeading, MyRole } from "./Layout";
-import { HOMEPAGE } from "../../utils/pageUrl";
+import { STEPHAR } from "../../utils/pageUrl";
 import styled from "styled-components";
 
 import BervVideo from "../../assets/videos/Berv.mp4"
@@ -66,9 +66,9 @@ export default function BervHome() {
     <Layout
       title="BervHome Tests"
       banner={BervHomeBG}
-      next="Everypenny"
+      next="Stephar"
       textDesc="Personal Finance Management"
-      route={HOMEPAGE}>
+      route={STEPHAR}>
 
       {/* About Section */}
       <DivWithHeading className="my-6">

@@ -12,9 +12,11 @@ import { StephInterface4 } from "../../assets/images"
 import { StephInterface5 } from "../../assets/images"
 
 import Layout, { DivWithHeading, MyRole } from "./Layout";
+// import { HOMEPAGE } from "../../utils/pageUrl"
 
 export default function Stephar() {
   return (
+
     <Layout
       title="Stephar"
       banner={StepharBG}
