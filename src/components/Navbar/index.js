@@ -4,7 +4,7 @@ import Logo from "../../assets/images/logo.svg"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { CgClose } from "react-icons/cg"
 import { useState } from "react"
-import {scroller} from 'react-scroll';
+import { scroller } from 'react-scroll';
 
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false)
@@ -56,15 +56,9 @@ const Navbar = () => {
             <li className="cursor-pointer uppercase">
               <NavLink to="/">Home</NavLink>
             </li>
-            {/* <NavLink activeClass="active" onClick={() => scroll("work")}> */}
             <li className="cursor-pointer uppercase" onClick={() => scroll("works")}>Works</li>
-            {/* </NavLink> */}
-            {/* <NavLink activeClass="active" onClick={() => scroll("about")}> */}
             <li className="cursor-pointer uppercase" onClick={() => scroll("about")}>About</li>
-            {/* </NavLink> */}
-            {/* <NavLink activeClass="active" onClick={() => scroll("contact")}> */}
             <li className="cursor-pointer uppercase" onClick={() => scroll("contact")}>Contact</li>
-            {/* </NavLink> */}
           </ul>
         </div>
         <GiHamburgerMenu className="text-2xl flex lg:hidden cursor-pointer" onClick={() => setOpenNav(true)} />

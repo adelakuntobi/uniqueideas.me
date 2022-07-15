@@ -29,7 +29,7 @@ import Loader from '../../components/Loader';
 
 
 const HeaderDiv = styled.section`
-  height: calc( 100vh - 200px);
+  height: calc( 100vh - 120px);
 `;
 
 const ReadyToWork = styled.section`
@@ -151,7 +151,7 @@ const Homepage = () => {
       {!loaded && <Loader />}
       <header className='min-h-screen'>
         <Navbar />
-        <HeaderDiv className='flex-col gap-y-6 lg:flex-row lg:justify-between flex items-center '>
+        <HeaderDiv className='flex-col gap-y-6 lg:flex-row justify-center lg:justify-between flex items-center '>
 
           <div className='lg:w-7/12'>
             <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold !leading-tight tracking-wide mb-4'>
@@ -211,42 +211,42 @@ const Homepage = () => {
               }
             </div>
           </section>
-          </Element>
+        </Element>
 
-            <section className='border-t border-b py-12' style={{ borderColor: "#374151" }}>
-              <TitleHeading>Branding Projects</TitleHeading>
-              <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-10'>
-                {
-                  BrandingArray.map((item, num) => {
-                    return (
-                      <SelectedWork key={num} item={item} />
-                    )
-                  })
-                }
-              </div>
-            </section>
-            {/* End of Selected Works */}
+        <section className='border-t border-b py-12' style={{ borderColor: "#374151" }}>
+          <TitleHeading>Branding Projects</TitleHeading>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-10'>
+            {
+              BrandingArray.map((item, num) => {
+                return (
+                  <SelectedWork key={num} item={item} />
+                )
+              })
+            }
+          </div>
+        </section>
+        {/* End of Selected Works */}
 
 
-            <About />
+        <About />
 
-            <Experience />
+        <Experience />
 
-            {/* Lets get to work */}
-            <ReadyToWork id="contact" className='items-center flex-col'>
-              <p className='mb-7 text-4xl'>
-                <img src={Happiness} alt="" className='w-10 ' />
-              </p>
-              <h5 className='uppercase font-bold text-xs mb-2' style={{ color: "#9CA3AF" }}>Ready to start a project?</h5>
-              <h2 className='text-text font-bold text-3xl mb-7'>Let's work together</h2>
-              <a href="mailto:Uniqueideas85@gmail.com">
-                <button className='bg-primary py-4 px-9 font-medium text-black'>Email Me</button>
-              </a>
-            </ReadyToWork>
-          </main>
+        {/* Lets get to work */}
+        <ReadyToWork id="contact" className='items-center flex-col'>
+          <p className='mb-7 text-4xl'>
+            <img src={Happiness} alt="" className='w-10 ' />
+          </p>
+          <h5 className='uppercase font-bold text-xs mb-2' style={{ color: "#9CA3AF" }}>Ready to start a project?</h5>
+          <h2 className='text-text font-bold text-3xl mb-7'>Let's work together</h2>
+          <a href="mailto:Uniqueideas85@gmail.com">
+            <button className='bg-primary py-4 px-9 font-medium text-black'>Email Me</button>
+          </a>
+        </ReadyToWork>
+      </main>
 
-          <Footer />
-        </div>
-        )
+      <Footer />
+    </div>
+  )
 }
-        export default Homepage
+export default Homepage
