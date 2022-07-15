@@ -15,7 +15,7 @@ const Navbar = () => {
 
 
   const scroll = async (name) => {
-    // setOpenNav(false)
+    setOpenNav(false)
     if (path === '/') {
       console.log(name)
       scroller.scrollTo(name, {
