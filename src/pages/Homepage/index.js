@@ -18,6 +18,7 @@ import DressBranding from "../../assets/images/landing/dressBranding.svg"
 import DressManagement from "../../assets/images/landing/dressManagement.svg"
 import Urbn from "../../assets/images/landing/urbn.svg"
 import { Link } from "react-scroll"
+import * as Scroll from 'react-scroll';
 
 import Happiness from "../../assets/images/happiness.png"
 import Typewriter from 'typewriter-effect/dist/core';
@@ -42,6 +43,9 @@ const ReadyToWork = styled.section`
 
 const Homepage = () => {
   const [loaded, setLoaded] = useState(false)
+  const Element = Scroll.Element;
+
+
   useEffect(() => {
     new Typewriter("#type", {
       loop: true,
@@ -52,7 +56,7 @@ const Homepage = () => {
       cursor: "",
     });
   }, [])
-  
+
   const SelectedArray = [
     {
       img: selected,
@@ -192,53 +196,57 @@ const Homepage = () => {
       <main>
 
         {/* Selected Works */}
-        <section id='works' className='border-t border-b py-12' style={{ borderColor: "#374151" }}>
-          <TitleHeading>Selected -- Works</TitleHeading>
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-10'>
-            {
-              SelectedArray.map((item, num) => {
-                return (
-                  <SelectedWork key={num} item={item}
-                  />
-                )
-              })
-            }
-          </div>
-        </section>
-        <section className='border-t border-b py-12' style={{ borderColor: "#374151" }}>
-          <TitleHeading>Branding Projects</TitleHeading>
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-10'>
-            {
-              BrandingArray.map((item, num) => {
-                return (
-                  <SelectedWork key={num} item={item} />
-                )
-              })
-            }
-          </div>
-        </section>
-        {/* End of Selected Works */}
+        <Element name="works" id="works">
+
+          <section className='border-t border-b py-12' style={{ borderColor: "#374151" }}>
+            <TitleHeading>Selected -- Works</TitleHeading>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-10'>
+              {
+                SelectedArray.map((item, num) => {
+                  return (
+                    <SelectedWork key={num} item={item}
+                    />
+                  )
+                })
+              }
+            </div>
+          </section>
+          </Element>
+
+            <section className='border-t border-b py-12' style={{ borderColor: "#374151" }}>
+              <TitleHeading>Branding Projects</TitleHeading>
+              <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-10'>
+                {
+                  BrandingArray.map((item, num) => {
+                    return (
+                      <SelectedWork key={num} item={item} />
+                    )
+                  })
+                }
+              </div>
+            </section>
+            {/* End of Selected Works */}
 
 
-        <About />
+            <About />
 
-        <Experience />
+            <Experience />
 
-        {/* Lets get to work */}
-        <ReadyToWork id="contact" className='items-center flex-col'>
-          <p className='mb-7 text-4xl'>
-            <img src={Happiness} alt="" className='w-10 ' />
-          </p>
-          <h5 className='uppercase font-bold text-xs mb-2' style={{ color: "#9CA3AF" }}>Ready to start a project?</h5>
-          <h2 className='text-text font-bold text-3xl mb-7'>Let's work together</h2>
-          <a href="mailto:Uniqueideas85@gmail.com">
-            <button className='bg-primary py-4 px-9 font-medium text-black'>Email Me</button>
-          </a>
-        </ReadyToWork>
-      </main>
+            {/* Lets get to work */}
+            <ReadyToWork id="contact" className='items-center flex-col'>
+              <p className='mb-7 text-4xl'>
+                <img src={Happiness} alt="" className='w-10 ' />
+              </p>
+              <h5 className='uppercase font-bold text-xs mb-2' style={{ color: "#9CA3AF" }}>Ready to start a project?</h5>
+              <h2 className='text-text font-bold text-3xl mb-7'>Let's work together</h2>
+              <a href="mailto:Uniqueideas85@gmail.com">
+                <button className='bg-primary py-4 px-9 font-medium text-black'>Email Me</button>
+              </a>
+            </ReadyToWork>
+          </main>
 
-      <Footer />
-    </div>
-  )
+          <Footer />
+        </div>
+        )
 }
-export default Homepage
+        export default Homepage

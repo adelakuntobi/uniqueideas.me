@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export default function Loader() {
   return (
     <LoaderStyle>
-      <div class="lds-ring">
+      <div className="lds-ring">
         <div></div>
         <div></div>
         <div></div>
