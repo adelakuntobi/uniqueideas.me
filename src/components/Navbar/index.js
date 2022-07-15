@@ -10,18 +10,9 @@ const Navbar = () => {
   const [openNav, setOpenNav] = useState(false)
 
   const path = useLocation().pathname;
-  const location = path.split('/')[1];
   const history = useNavigate();
   // const scroller = Scroll.scroller;
 
-  const scrollToAnchor = () => {
-    scroller.scrollTo('anchor', {
-      duration: 1500,
-      delay: 100,
-      smooth: true,
-      offset: 50
-    });
-  };
 
   const scroll = async (name) => {
     // setOpenNav(false)
