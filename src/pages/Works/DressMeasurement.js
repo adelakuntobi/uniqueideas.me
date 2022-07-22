@@ -70,7 +70,7 @@ export default function DressMeasurement() {
         <p>
           This feature was made available to only premium subscribers. Free users get to enjoy measurements made available in default pages.
         </p>
-        <video className='mt-6' autoPlay={true} loop={true} controls={false}>
+        <video playsInline={true}  className='mt-6' autoPlay={true} loop={true} controls={false}>
           <source src={Measurement1} type="video/mp4" />
         </video>
       </DivWithHeading>
@@ -81,7 +81,7 @@ export default function DressMeasurement() {
       <DivWithHeading>
         <h3>Reference Measurements</h3>
         <p>This feature is similar to custom measurement. It gives the user clues on areas to focus on. It is a measurement with no visible label that guides the user in identifying the measurement they are taking by showing them a greyed out measurement nearby. It’s a way of visually telling the user, “hey, we are focusing on the knee bone and not the thigh”.</p>
-        <video className='mt-6' autoPlay={true} loop={true} controls={false}>
+        <video playsInline={true}  className='mt-6' autoPlay={true} loop={true} controls={false}>
           <source src={Measurement2} type="video/mp4" />
         </video>
       </DivWithHeading>
@@ -108,7 +108,7 @@ export default function DressMeasurement() {
             <span>Save Local Backup:</span> Uploads information on the local device to the cloud.
           </li>
         </ul>
-        <video className='mt-6' autoPlay={true} loop={true} controls={false}>
+        <video playsInline={true}  className='mt-6' autoPlay={true} loop={true} controls={false}>
           <source src={Measurement3} type="video/mp4" />
         </video>
       </DivWithHeading>
@@ -117,7 +117,7 @@ export default function DressMeasurement() {
       <DivWithHeading>
         <h3>Page Settings</h3>
         <p>This feature lets you turn on/off pages so that only what you want to see is visible to a profile. This feature is only available to premium subscribers.</p>
-        <video className='mt-6' autoPlay={true} loop={true} controls={false}>
+        <video playsInline={true}  className='mt-6' autoPlay={true} loop={true} controls={false}>
           <source src={Measurement4} type="video/mp4" />
         </video>
       </DivWithHeading>

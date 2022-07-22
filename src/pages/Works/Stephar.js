@@ -82,7 +82,7 @@ export default function Stephar() {
           I focused primarily on creating a simple to use yet intuitive interface that accomodates all the key features of Stephar.
         </p>
       </DivWithHeading>
-      <video autoPlay={true} loop={true} controls={false}>
+      <video playsInline={true}  autoPlay={true} loop={true} controls={false}>
         <source src={WireframeVideo} type="video/mp4" />
       </video>
       <DivWithHeading>
