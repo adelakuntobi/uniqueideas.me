@@ -20,9 +20,7 @@ AOS.init({
   delay: 250,
 });
 
-function App() {
-
-  
+function App() {  
   return (
     <div className="App relative overflow-x-hidden">
       <ScrollToTop />
