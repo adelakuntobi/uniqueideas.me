@@ -154,17 +154,10 @@ const Homepage = () => {
         <HeaderDiv className='flex-col gap-y-6 lg:flex-row justify-center lg:justify-between flex items-center '>
 
           <div className='lg:w-7/12'>
-            <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold !leading-tight tracking-wide mb-4'>
-              Passionately designing {" "}
+            <h1 className='ivy text-3xl md:text-4xl lg:text-6xl font-bold !leading-tight tracking-wide mb-4'>
+              Designing {" "}
               <span id="type"></span>
-              {/* <span id="type">
-                <span>
-                  <span>thoughtful,</span>
-                  <span>intuitive,</span>
-                  <span>delightful</span>
-                </span>
-              </span> */}
-              {" "} experiences for all human.
+              {" "} experiences for all.
             </h1>
             <p className='text-primary text-lg lg:text-2xl hidden lg:block'>
               Hi, I’m <span className='font-medium'>IFY, a product designer passionate</span> about people and how technology enhances our living experience. I love to create products that people love and trust.

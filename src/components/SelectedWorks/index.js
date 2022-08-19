@@ -13,6 +13,7 @@ export const TitleHeading = styled.h3`
   color: #D1E2C0;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
+  font-family: 'Ivy Mode', sans-serif;
   @media (max-width: 1024px) { 
     font-size: 20px;
     line-height: 24px;
