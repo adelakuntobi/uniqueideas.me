@@ -154,13 +154,14 @@ const Homepage = () => {
         <HeaderDiv className='flex-col gap-y-6 lg:flex-row justify-center lg:justify-between flex items-center '>
 
           <div className='lg:w-7/12'>
+            <p className='text-primary text-lg lg:text-2xl'>Hello, I'm <span className='font-bold uppercase'>Ify</span></p>
             <h1 className='ivy text-3xl md:text-4xl lg:text-6xl font-bold !leading-tight tracking-wide mb-4'>
               Designing {" "}
               <span id="type"></span>
               {" "} experiences for all.
             </h1>
-            <p className='text-primary text-lg lg:text-2xl hidden lg:block'>
-              Hi, I’m <span className='font-medium'>IFY, a product designer passionate</span> about people and how technology enhances our living experience. I love to create products that people love and trust.
+            <p className='text-primary text-lg lg:text-2xl hidden lg:block max-w-xl'>
+            I'm a Product Designer and Visual Thinker passionate about designing intuitive products that are accessible to everyone.
             </p>
           </div>
           <div className='relative lg:w-5/12 grid place-items-center'>
@@ -181,7 +182,7 @@ const Homepage = () => {
             </Link>
           </div>
           <p data-aos="fade-right" data-aos-delay="1000" className='text-primary text-lg lg:text-2xl block lg:hidden'>
-            Hi, I’m <span className='font-medium'>IFY, a product designer passionate</span> about people and how technology enhances our living experience. I love to create products that people love and trust.
+          I'm a Product Designer and Visual Thinker passionate about designing intuitive products that are accessible to everyone.
           </p>
         </HeaderDiv>
       </header>
@@ -192,7 +193,7 @@ const Homepage = () => {
         <Element name="works" id="works">
 
           <section className='border-t border-b py-12' style={{ borderColor: "#374151" }}>
-            <TitleHeading>Selected -- Works</TitleHeading>
+            <h3 className='font-bold ivy text-4xl lg:pl-7 mb-5'>Selected Works</h3>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-10'>
               {
                 SelectedArray.map((item, num) => {

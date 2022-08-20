@@ -19,6 +19,7 @@ export default function Stephar() {
 
     <Layout
       title="Stephar"
+      topNote="UX Case Study"
       banner={StepharBG}
       home={true}>
 

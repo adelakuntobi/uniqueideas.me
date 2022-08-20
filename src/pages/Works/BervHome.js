@@ -64,7 +64,9 @@ export default function BervHome() {
   ]
   return (
     <Layout
-      title="BervHome Tests"
+      title="BervHome"
+      titleBreak="Tests"
+      topNote="UX Case Study"
       banner={BervHomeBG}
       next="Stephar"
       textDesc="Personal Finance Management"

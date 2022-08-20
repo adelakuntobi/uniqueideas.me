@@ -6,16 +6,18 @@ import Footer from "../../components/Footer";
 import { HOMEPAGE } from "../../utils/pageUrl";
 
 export default function Layout(props) {
-  const { children, title, banner, next, textDesc, route, home } = props
+  const { children, title, banner, next, textDesc, route, home, topNote, titleBreak } = props
   return (
     <div style={{ color: "#E5E7EB" }}>
       <div className="container">
         <Navbar />
       </div>
       <div className="container my-5">
-        <h2
-          data-aos="fade-left"
-          className="font-bold text-3xl lg:text-5xl mb-8">{title}</h2>
+        <p data-aos="fade-left" className="text-primary mb-6">{topNote}</p>
+        <h2 className="font-bold ivy text-3xl lg:text-5xl mb-8">
+          <span data-aos="fade-left" data-aos-delay="500" className="block">{title}</span>
+          <span data-aos="fade-left" data-aos-delay="900" className="block">{titleBreak}</span>
+        </h2>
         <img data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
           src={banner} alt="" className="w-full" />

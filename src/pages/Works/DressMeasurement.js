@@ -10,11 +10,13 @@ import { Link } from 'react-router-dom'
 export default function DressMeasurement() {
   return (
     <Layout
-      title="Dress Measurement App"
+      title="Dress"
+      titleBreak="Measurement App"
       banner={Banner}
       next="BervHome Test"
       textDesc="At-Home-Test for Everyone"
-      route={BERVHOME}>
+      route={BERVHOME}
+      topNote="UX Case Study">
 
       {/* About Section */}
       <DivWithHeading className="my-6">

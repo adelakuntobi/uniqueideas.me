@@ -5,10 +5,6 @@ import { URBN } from "../../utils/pageUrl";
 
 export default function Dress() {
   return (
-    // <Layout
-    // title="Dress Measurement App Branding"
-    // banner={dress1}
-    // next="URBN Branding">
     <Layout
       title="Dress Measurement App Branding"
       banner={dress1}
