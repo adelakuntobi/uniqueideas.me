@@ -21,7 +21,7 @@ export const TitleHeading = styled.h3`
 export const SelectedWork = (props) => {
   const { item } = props
   return (
-    <div className='flex flex-col-reverse lg:flex-col mb-10'>
+    <div className='flex flex-col mb-10'>
       <Link to={item.route}>
         {/* <img src={item.img} className="w-full" alt="" /> */}
         {/* <SelectedImg>
@@ -50,7 +50,7 @@ export const SelectedWork = (props) => {
         <img src={item.img} className="w-full" alt="" />
       </Link>
       {/* <hr className='mt-3' style={{ borderColor: "#374151" }} /> */}
-      <div className='justify-between lg:mt-2'>
+      <div className='justify-between mt-2'>
         <h4 className='text-2xl md:text-3xl '>{item.title}</h4>
         {
           item.comingSoon &&

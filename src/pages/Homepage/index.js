@@ -109,7 +109,7 @@ const Homepage = () => {
 
           <div className='lg:w-7/12'>
             <p className='text-primary text-lg lg:text-2xl'>Hello, I'm <span className='font-bold uppercase'>Ify</span></p>
-            <h1 className='ivy text-3xl md:text-4xl lg:text-6xl font-bold !leading-tight tracking-wide mb-4'>
+            <h1 className='ivy text-4xl lg:text-6xl font-bold !leading-tight tracking-wide mb-4'>
               Designing {" "}
               <span id="type"></span>
               {" "} experiences for all.
@@ -118,7 +118,7 @@ const Homepage = () => {
               I'm a Product Designer and Visual Thinker passionate about designing intuitive products that are accessible to everyone.
             </p>
           </div>
-          <div className='relative lg:w-5/12 grid place-items-center'>
+          <div className='relative lg:mb-3 lg:w-5/12 grid place-items-center'>
             <img src={HeaderPhoto} className="w-full" alt="" onLoad={() => setLoaded(true)} />
             <Link
               to="contact"
