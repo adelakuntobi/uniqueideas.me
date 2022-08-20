@@ -56,18 +56,12 @@ const Homepage = () => {
     });
   }, [])
 
-  const SelectedArray = [
+  const LeftArray = [
     {
       title: "Dress Measurement",
       route: PageURL.DRESS_MANAGEMENT,
       case: "UX Case Study",
       img: DressManagement
-    },
-    {
-      title: "BervHome Tests",
-      route: PageURL.BERVHOME,
-      case: "UX Case Study",
-      img: Bervhome,
     },
     {
       title: "Stephar",
@@ -76,20 +70,27 @@ const Homepage = () => {
       img: Stephar
     },
     {
+      title: "Dress Measurement App",
+      route: PageURL.DRESS_BRANDING,
+      case: "Branding",
+      img: DressBranding
+    },
+
+
+  ]
+  const RightArray = [
+    {
+      title: "BervHome Tests",
+      route: PageURL.BERVHOME,
+      case: "UX Case Study",
+      img: Bervhome,
+    },
+    {
       title: "EveryPenny",
       route: "/",
       case: "UX Case Study",
       img: Everypenny,
       comingSoon: true,
-    },
-
-  ]
-  const BrandingArray = [
-    {
-      title: "Dress Measurement App",
-      route: PageURL.DRESS_BRANDING,
-      case: "Branding",
-      img: DressBranding
     },
     {
       title: "URBN Brand",
@@ -147,26 +148,28 @@ const Homepage = () => {
 
           <section className='border-t border-b py-12' style={{ borderColor: "#374151" }}>
             <h3 className='font-bold ivy text-4xl lg:pl-7 mb-5'>Selected Works</h3>
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-10'>
-              {
-                SelectedArray.map((item, num) => {
-                  return (
-                    <SelectedWork key={num} item={item}
-                    />
-                  )
-                })
-              }
-            </div>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-16  '>
+              <div>
+                {
+                  LeftArray.map((item, num) => {
+                    return (
+                      <SelectedWork key={num} item={item}
+                      />
+                    )
+                  })
+                }
+              </div>
 
 
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-10'>
-              {
-                BrandingArray.map((item, num) => {
-                  return (
-                    <SelectedWork key={num} item={item} />
-                  )
-                })
-              }
+              <div className='pt-20'>
+                {
+                  RightArray.map((item, num) => {
+                    return (
+                      <SelectedWork key={num} item={item} />
+                    )
+                  })
+                }
+              </div>
             </div>
           </section>
         </Element>
