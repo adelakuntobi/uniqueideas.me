@@ -147,7 +147,7 @@ const Homepage = () => {
         <Element name="works" id="works">
 
           <section className='border-t border-b py-12' style={{ borderColor: "#374151" }}>
-            <h3 className='font-bold ivy text-4xl lg:pl-7 mb-5'>Selected Works</h3>
+            <h3 className='font-bold ivy text-4xl lg:pl-7 mt-2 mb-5'>Selected Works</h3>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-16  '>
               <div>
                 {
@@ -161,7 +161,7 @@ const Homepage = () => {
               </div>
 
 
-              <div className='pt-20'>
+              <div className='lg:pt-20'>
                 {
                   RightArray.map((item, num) => {
                     return (

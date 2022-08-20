@@ -50,7 +50,7 @@ export const SelectedWork = (props) => {
         <img src={item.img} className="w-full" alt="" />
       </Link>
       {/* <hr className='mt-3' style={{ borderColor: "#374151" }} /> */}
-      <div className='justify-between mt-2'>
+      <div className='justify-between items-center mt-2'>
         <h4 className='text-2xl md:text-3xl '>{item.title}</h4>
         {
           item.comingSoon &&
