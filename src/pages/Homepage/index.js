@@ -148,7 +148,7 @@ const Homepage = () => {
 
           <section className='border-t border-b py-12' style={{ borderColor: "#374151" }}>
             <h3 className='font-bold ivy text-4xl lg:pl-7 mt-2 mb-5'>Selected Works</h3>
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-16  '>
+            <div className='grid grid-cols-1 lg:grid-cols-2 lg:gap-16  '>
               <div>
                 {
                   LeftArray.map((item, num) => {
