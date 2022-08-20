@@ -50,8 +50,11 @@ export const SelectedWork = (props) => {
         <img src={item.img} className="w-full" alt="" />
       </Link>
       {/* <hr className='mt-3' style={{ borderColor: "#374151" }} /> */}
-      <div className='justify-between items-center mt-2'>
-        <h4 className='text-2xl md:text-3xl '>{item.title}</h4>
+      <div className='justify-between items-center mt-3'>
+        <div>
+          <h4 className='text-2xl md:text-3xl '>{item.title}</h4>
+          <p className='text-[#9CA3AF]'>{item.case}</p>
+        </div>
         {
           item.comingSoon &&
           <p className='coming-soon items-center gap-3 px-3 py-2' style={{ color: "#41BED4", backgroundColor: "#163b42", }}>
@@ -60,7 +63,7 @@ export const SelectedWork = (props) => {
           </p>
         }
       </div>
-      <p className='text-[#9CA3AF]'>{item.case}</p>
+
       {/* <ul className='flex list-disc gap-8 uppercase my-2' style={{ color: " #9CA3AF" }}>
       {
           item.desc.map((des, num) => {
