@@ -35,13 +35,15 @@ export default function Urbn() {
   }
   return (
     <Layout
-      title="URBN - Streetwear Fashion Branding"
+      title="URBN - Streetwear"
+      titleBreak="Fashion Branding"
+      topNote="Branding"
       banner={urbn1}
       home={true}>
       <div>
         {[...Array(8)].map((x, i) =>
           <img
-            data-aos="fade-up" 
+            data-aos="fade-up"
             data-aos-anchor-placement="center-bottom"
             src={require(`../../assets/images/urbn/urbn${i + 2}.png`)}
             alt="" key={i + 2} className="w-full" />
@@ -50,7 +52,7 @@ export default function Urbn() {
         <h3 className='mt-8 mb-6 font-bold text-xl lg:text-3xl pl-12 '>Use Cases</h3>
         {[...Array(10)].map((x, i) =>
           <img
-          data-aos="fade-up" data-aos-delay={1000 * i}
+            data-aos="fade-up" data-aos-delay={1000 * i}
             src={require(`../../assets/images/urbn/urbn${i + 10}.png`)}
             alt="" key={i + 10} className="w-full" />
 

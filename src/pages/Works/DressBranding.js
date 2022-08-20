@@ -6,10 +6,12 @@ import { URBN } from "../../utils/pageUrl";
 export default function Dress() {
   return (
     <Layout
-      title="Dress Measurement App Branding"
       banner={dress1}
-      next="URBN Branding"
+      title="Dress"
+      titleBreak="Measurement App"
+      topNote="Branding"
       textDesc=""
+      next="URBN Branding"
       route={URBN}>
       <DressDiv>
         <p data-aos="fade-up" data-aos-delay="1000" >Dress Measurement app as the name implies is an app that let’s you take, store and send your clothing and body measurements anywhere. It guides you on how to take your body measurements and stores them in the cloud for easy future reference.

@@ -1,7 +1,6 @@
 
 import Navbar from '../../components/Navbar'
-import { selected } from "../../assets/images";
-import { SelectedWork, TitleHeading } from '../../components/SelectedWorks';
+import { SelectedWork } from '../../components/SelectedWorks';
 import About from './About';
 import styled from 'styled-components';
 import Footer from '../../components/Footer';
@@ -14,8 +13,8 @@ import Roller from "../../assets/images/roller.png"
 import Stephar from "../../assets/images/landing/stephar.svg"
 import Bervhome from "../../assets/images/landing/bervhome.svg"
 import Everypenny from "../../assets/images/landing/everypenny.svg"
-import DressBranding from "../../assets/images/landing/dressBranding.svg"
-import DressManagement from "../../assets/images/landing/dressManagement.svg"
+import DressBranding from "../../assets/images/landing/dm-app.svg"
+import DressManagement from "../../assets/images/landing/dress-measurement.svg"
 import Urbn from "../../assets/images/landing/urbn.svg"
 import { Link } from "react-scroll"
 import * as Scroll from 'react-scroll';
@@ -59,90 +58,44 @@ const Homepage = () => {
 
   const SelectedArray = [
     {
-      img: selected,
       title: "Dress Measurement",
       route: PageURL.DRESS_MANAGEMENT,
-      desc: [
-        "Research",
-        "Strategy",
-        "Design"
-      ],
-      color: "#FDC741",
-      imageText: "Easily take, store and share your measurements",
       case: "UX Case Study",
-      imageImg: DressManagement
+      img: DressManagement
     },
     {
-      img: selected,
       title: "BervHome Tests",
       route: PageURL.BERVHOME,
-      desc: [
-        "Research",
-        "Strategy",
-        "Design"
-      ],
-      color: "#FEF3C7",
-      imageText: "At-home tests for everyone",
       case: "UX Case Study",
-      imageImg: Bervhome,
+      img: Bervhome,
     },
     {
-      img: selected,
       title: "Stephar",
       route: PageURL.STEPHAR,
-      desc: [
-        "Research",
-        "Innovative",
-        "Design"
-      ],
-      color: "#41BED4",
-      imageText: "Metaverse and NFT Analysis platform",
       case: "UX Case Study",
-      imageImg: Stephar
+      img: Stephar
     },
     {
-      img: selected,
       title: "EveryPenny",
       route: "/",
-      desc: [
-        "Research",
-        "Innovative",
-        "Design"
-      ],
-      color: "#4159D4",
-      imageText: "Personal Finance Management",
       case: "UX Case Study",
-      imageImg: Everypenny,
+      img: Everypenny,
       comingSoon: true,
     },
 
   ]
   const BrandingArray = [
     {
-      img: selected,
       title: "Dress Measurement App",
       route: PageURL.DRESS_BRANDING,
-      desc: [
-        "Research",
-        "Branding"
-      ],
-      color: "#41BED4",
-      imageText: "Easily take, store and share your measurements",
       case: "Branding",
-      imageImg: DressBranding
+      img: DressBranding
     },
     {
-      img: selected,
       title: "URBN Brand",
       route: PageURL.URBN,
-      desc: [
-        "Research",
-        "Branding"
-      ],
-      color: "#FF5254",
-      imageText: "Streetwear Fashion Brand",
       case: "Branding",
-      imageImg: Urbn
+      img: Urbn
     },
   ]
 
@@ -161,7 +114,7 @@ const Homepage = () => {
               {" "} experiences for all.
             </h1>
             <p className='text-primary text-lg lg:text-2xl hidden lg:block max-w-xl'>
-            I'm a Product Designer and Visual Thinker passionate about designing intuitive products that are accessible to everyone.
+              I'm a Product Designer and Visual Thinker passionate about designing intuitive products that are accessible to everyone.
             </p>
           </div>
           <div className='relative lg:w-5/12 grid place-items-center'>
@@ -182,7 +135,7 @@ const Homepage = () => {
             </Link>
           </div>
           <p data-aos="fade-right" data-aos-delay="1000" className='text-primary text-lg lg:text-2xl block lg:hidden'>
-          I'm a Product Designer and Visual Thinker passionate about designing intuitive products that are accessible to everyone.
+            I'm a Product Designer and Visual Thinker passionate about designing intuitive products that are accessible to everyone.
           </p>
         </HeaderDiv>
       </header>
@@ -204,26 +157,22 @@ const Homepage = () => {
                 })
               }
             </div>
+
+
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-10'>
+              {
+                BrandingArray.map((item, num) => {
+                  return (
+                    <SelectedWork key={num} item={item} />
+                  )
+                })
+              }
+            </div>
           </section>
         </Element>
-
-        <section className='border-t border-b py-12' style={{ borderColor: "#374151" }}>
-          <TitleHeading>Branding Projects</TitleHeading>
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-10'>
-            {
-              BrandingArray.map((item, num) => {
-                return (
-                  <SelectedWork key={num} item={item} />
-                )
-              })
-            }
-          </div>
-        </section>
         {/* End of Selected Works */}
 
-
         <About />
-
         <Experience />
 
         {/* Lets get to work */}
