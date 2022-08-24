@@ -161,7 +161,7 @@ const Homepage = () => {
               </div>
 
 
-              <div className='lg:pt-20'>
+              <div className='lg:pt-24'>
                 {
                   RightArray.map((item, num) => {
                     return (
