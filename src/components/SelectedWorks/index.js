@@ -22,7 +22,7 @@ export const SelectedWork = (props) => {
   const { item } = props
   return (
     <div className='flex flex-col mb-10'>
-      <Link to={item.route}>
+      <Link to={item.route} className={item.comingSoon && "cursor-default"}>
         {/* <img src={item.img} className="w-full" alt="" /> */}
         {/* <SelectedImg>
           <div className='p-4 md:p-8 lg:p-10 items-center justify-between h-full'>
