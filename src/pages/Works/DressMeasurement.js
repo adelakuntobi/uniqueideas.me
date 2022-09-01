@@ -12,8 +12,7 @@ import Architecture from "../../assets/images/dressMeasurement/architecture.png"
 import NewFeel from "../../assets/images/dressMeasurement/new-feel.png"
 import Notes from "../../assets/images/dressMeasurement/testing.png"
 
-import { BERVHOME, DRESS_BRANDING } from '../../utils/pageUrl'
-import { Link } from 'react-router-dom'
+import { BERVHOME } from '../../utils/pageUrl'
 import { UserPersona } from './BervHome'
 
 export default function DressMeasurement() {
@@ -85,18 +84,6 @@ export default function DressMeasurement() {
         </ul>
       </DivWithHeading> */}
 
-      {/* <DivWithHeading className="my-10">
-        <h3>Work Overview </h3>
-        <p>
-          <b>Dress Measurement App</b> has a global audience because of its unique product offering. It is built for everyone who wants to keep their clothing measurements assessible whether it is to enhance personal shopping experience or for better management of clients’ data.
-        </p>
-        <p>
-          In my first year at Aeeiee, I worked with a UX writer amongst engineers to create a redesign. The aim of the redesign was to create interfaces that was more usable and intentional, meeting the needs of our target audience, increasing adoption and meeting the business needs as well.
-        </p>
-        <p>
-          This modification materialised the firm’s business goal of increased adoption   as Dress Measurement App now has over 24k users and revenue has increased by 3x so far.
-        </p>
-      </DivWithHeading> */}
       <MyRole>
         <p>My role</p>
         <ul>
@@ -259,32 +246,6 @@ export default function DressMeasurement() {
         </video>
       </DivWithHeading>
 
-
-      {/* <DivWithHeading>
-        <h3 className='normal-case white'>iCloud Submenu</h3>
-        <p>
-          The initial approach to the iCloud functionality was to have the activity running in the background. This leaves the user completely clueless on the status of their upload or download. Upon iteration, I introduced a submenu. This provided specific updates on the status of the following:
-        </p>
-        <ul>
-          <li>
-            <span>iCloud Storage Stats:</span> Real time updates on how much major functionalities in the app like profiles, measurements, notes, photos , custom measurements, custom pages, reference measurements have either uploaded or downloaded depending on the action the user is taking.
-          </li>
-          <li>
-            <span>Auto Sync Status:</span> This tells if autosync is OFF or ON
-          </li>
-          <li>
-            <span>Pull from iCloud / Push to iCloud:</span> This overwrites information on the Local device with information on the cloud or overwrites information on iCloud with information on the local device.
-          </li>
-          <li>
-            <span>Save Local Backup:</span> Uploads information on the local device to the cloud.
-          </li>
-        </ul>
-        <video playsInline={true} className='mt-6' autoPlay={true} loop={true} controls={false}>
-          <source src={Measurement3} type="video/mp4" />
-        </video>
-      </DivWithHeading> */}
-
-
       <DivWithHeading>
         <h3 className='white'>Page Settings</h3>
         <p>This feature lets you turn on/off pages so that only what you want to see is visible to a profile. This feature is only available to premium subscribers.</p>
@@ -318,31 +279,6 @@ export default function DressMeasurement() {
         </p>
       </DivWithHeading>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <DivWithHeading>
         <h3>Priority Changes</h3>
         <p>Based off observing users while they interacted with the prototype and feedback received, I prioritized making the iCloud submenu more user-friendly.</p>
@@ -364,6 +300,9 @@ export default function DressMeasurement() {
         <p>
           Save Local Backup: Uploads information on the local device to the cloud.
         </p>
+        <video playsInline={true} className='mt-6' autoPlay={true} loop={true} controls={false}>
+          <source src={Measurement3} type="video/mp4" />
+        </video>
       </DivWithHeading>
 
 
