@@ -53,6 +53,10 @@ export const DivWithHeading = styled.div`
     font-size: 1.875rem/* 30px */;
     line-height: 2.25rem/* 36px */;
     text-transform: capitalize;
+    &.white{
+      font-size: 1.65rem/* 28px */;
+      color: #fff;
+    }
   }
   p{
     margin-bottom: 1.5rem;

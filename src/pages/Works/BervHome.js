@@ -273,7 +273,7 @@ export default function BervHome() {
 
 
 
-const UserPersona = styled.div`
+export const UserPersona = styled.div`
   .imgAndText{
     display: flex;
     align-items: end;
