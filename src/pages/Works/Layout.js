@@ -57,6 +57,12 @@ export const DivWithHeading = styled.div`
       font-size: 1.65rem/* 28px */;
       color: #fff;
     }
+    @media (max-width: 1024px) { 
+      margin-bottom: 0.5rem;
+      &.white{
+        font-size: 1.25rem/* 28px */;
+      }
+    }
   }
   p{
     margin-bottom: 1.5rem;
@@ -82,7 +88,7 @@ export const DivWithHeading = styled.div`
   @media (max-width: 1024px) { 
 
     h3{
-      font-size: 1.25rem/* 20px */;
+      font-size: 1.45rem/* 20px */;
       line-height: 1.75rem;
     }
     p{

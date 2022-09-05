@@ -19,12 +19,12 @@ export default function DressMeasurement() {
   const UserPersonal = [
     {
       img: User1,
-      fullName: "Kelvin Grey wood",
+      fullName: "Kelvin Greywood",
       occupation: "Fashion Entrepreneur",
       age: 35,
       goals: [
         "Ability to manage customer data easily",
-        "Accessing new or updated measurements that are reliable from customer without a physical meeting",
+        "Accessing new or updated measurements that are reliable from a customer without a physical meeting",
         "Ability to access customer’s measurement across several devices",
       ],
       frustrations: [
@@ -39,9 +39,9 @@ export default function DressMeasurement() {
       occupation: "Fashion Enthusiast",
       age: 27,
       goals: [
-        "Being a lover of fashion, getting perfectly fit clothes.",
-        "Have an accessible measurement of family so making fashion decisions for them is easy",
-        "Having her clothes properly made without one-on-one with her fashion designer",
+        "Being a lover of fashion, I appreciate perfectly fit clothes",
+        "Have an accessible measurement of my family so making fashion decisions for them is easy",
+        "Having my clothes made properly made without one-on-one with her fashion designer",
       ],
       frustrations: [
         "Always getting oversized/undersized clothes for family",
@@ -66,14 +66,14 @@ export default function DressMeasurement() {
           Take, store and share your clothing and body measurements anywhere. Dress measurement app provides an interactive guide that lets you take your body measurement and stores them on the cloud for easy reference. Easily take down your measurements by sight of an avatar or by a name on our alphabetized list view. Keep the pen and paper away.
         </p>
         <p>
-          Product offerings<br />
-          As a fashion entrepreneur, keep track of your customers’ measurements in one place, keep them organized and synced to the cloud and easily find your customers with powerful search tools.
-          Easily share your measurements as PDF or CSV
+          <b>Product Offerings</b><br />
+          As a fashion entrepreneur, keep track of your customers’ measurements in one place, keep them organized and synced to the cloud and easily find your customer's measurement' with powerful search tools.
+          Share your measurements as PDF or CSV
           Take notes and store photos specific to each profile.  This is synced to the cloud so no need to worry about losing your data.
         </p>
-        <p>
+        {/* <p>
           Easily take down your measurements by sight of an avatar or by a name on our alphatized list view. Keep the pen and paper away
-        </p>
+        </p> */}
       </DivWithHeading>
       {/* <DivWithHeading className="!py-0">
         <h4 className='text-lg lg:text-2xl font-bold'>Product Offerings</h4>
@@ -107,12 +107,12 @@ export default function DressMeasurement() {
       </MyRole>
 
       <DivWithHeading className="mt-10">
-        <h3>Project Overview</h3>
+        <h3>Project Details</h3>
         <p>
           The goal for this project was for Dress Measurement App to become more user focused and for it to be the go-to app for everyone who wants to keep their clothing measurements accessible. Whether it is to enhance personal shopping experience or for better management of customer’s data.
         </p>
         <p>
-          The high level goal was to Redesign the existing app so that it becomes modern, easy and delightful to use.
+          The <span className='font-medium'>high level</span> goal was to redesign the existing app so that it becomes modern, easy and delightful to use.
         </p>
       </DivWithHeading>
 
@@ -139,16 +139,16 @@ export default function DressMeasurement() {
       </DivWithHeading>
       <DivWithHeading>
         <p>
-          My high level goals were to uncover user’s experience on using the existing version that was live.
+          My <span className='font-medium'>high level goals</span> were to uncover user’s experience on using the existing version that was live.
         </p>
         <p>
-          The desire for personalization: People want to be able to enter desired body measurements into the app and not necessarily stick to the default measurements made available on the app.
+          <span className="font-medium">The desire for personalization:</span> People want to be able to enter desired body measurements into the app and not necessarily stick to the default measurements made available on the app.
         </p>
         <p>
-          Inefficient app performance: Continuous barrier to complete tasks due to bugs that crash the app
+          <span className="font-medium">Inefficient app performance:</span> Continuous barrier to complete tasks due to bugs that crash the app
         </p>
         <p>
-          The need for clarity: In general, users crave an interface that is intuitive, one that has an interface that is relatable and easy to use even on first interaction.
+          <span className="font-medium">The need for clarity:</span> In general, users crave an interface that is intuitive, one that has an interface that is relatable and easy to use even on first interaction.
 
         </p>
       </DivWithHeading>
@@ -169,7 +169,7 @@ export default function DressMeasurement() {
                       <p>{user.age} years</p>
                     </div>
                   </div>
-                  <div className="my-8">
+                  <div className="my-4 lg:my-8">
                     <h6>Goals</h6>
                     <ul>
                       {
@@ -217,16 +217,17 @@ export default function DressMeasurement() {
       <DivWithHeading className="mt-10">
         <h3>A new feel, a unique experience</h3>
         <p>
-          I aimed at creating designs that are human centered at every touchpoint. By Utilizing simple avatars with closely stated guidelines, Dress Measurement App shaped up to become warm and user-friendly as intended
+          I aimed at creating designs that are human centered at every touchpoint. By utilizing simple avatars with closely stated guidelines, Dress Measurement App shaped up to become warm and user-friendly as intended
         </p>
         <img src={NewFeel} className="pt-10 pb-8" alt="" />
-        <p>Key features introduced into the redesign include:</p>
+       
       </DivWithHeading>
 
 
 
 
       <DivWithHeading>
+      <p className='font-medium !mb-2'>Key features introduced into the redesign include:</p>
         <h3 className='white'>Custom Pages and Measurement</h3>
         <p>
           This feature made it possible for users to create their own pages and personal measurements as they want. Users are allowed to add as many pages and measurements as they desire without limits.  </p>
@@ -261,7 +262,8 @@ export default function DressMeasurement() {
           I conducted my usability testing remotely over zoom, asking participants to share their screens and think aloud while I recorded their interaction on the prototype. I asked participants to place themselves in the following scenario:
         </p>
         <p>
-          I want you to imagine newly downloading the app. Create a profile, add custom measurements, add reference measurements, add notes and photos to the profile created.
+          I want you to imagine newly downloading the app. <br/>
+          <span className='text-2xl font-medium lg:text-3xl'>Create a profile, add custom measurements, add reference measurements, add notes and photos to the profile created.</span>
         </p>
       </DivWithHeading>
 
@@ -289,16 +291,16 @@ export default function DressMeasurement() {
           The initial approach to the iCloud functionality was to have the activity running in the background. This leaves the user completely clueless on the status of their upload or download. Upon iteration, I introduced a submenu. This provided specific updates on the status of the following:
         </p>
         <p>
-          iCloud Storage Stats: Real time updates on how many major functionalities in the app like profiles, measurements, notes, photos, custom measurements, custom pages, reference measurements have either uploaded or downloaded depending on the action the user is taking.
+          <span className='font-medium'> iCloud Storage Stats:</span> Real time updates on how many major functionalities in the app like profiles, measurements, notes, photos, custom measurements, custom pages, reference measurements have either uploaded or downloaded depending on the action the user is taking.
         </p>
         <p>
-          Auto Sync Status: This tells if autosync is OFF or ON
+          <span className='font-medium'> Auto Sync Status:</span> This tells if autosync is OFF or ON
         </p>
         <p>
-          Pull from iCloud / Push to iCloud: This overwrites information on the Local device with information on the cloud or overwrites information on iCloud with information on the local device.
+          <span className='font-medium'> Pull from iCloud / Push to iCloud:</span> This overwrites information on the Local device with information on the cloud or overwrites information on iCloud with information on the local device.
         </p>
         <p>
-          Save Local Backup: Uploads information on the local device to the cloud.
+          <span className='font-medium'> Save Local Backup:</span> Uploads information on the local device to the cloud.
         </p>
         <video playsInline={true} className='mt-6' autoPlay={true} loop={true} controls={false}>
           <source src={Measurement3} type="video/mp4" />
@@ -313,7 +315,7 @@ export default function DressMeasurement() {
 
       <DivWithHeading>
         <h3>Lessons and key takeaways</h3>
-        <p>I learned the value of digging deep into user’s frustrations and championing users needs to ensure it meets all requirements to ensure it becomes a widely used product that is user centered and can make the fashion industry experience way better
+        <p>I learned the value of digging deep into user’s frustrations and championing users needs to ensure so it meets all requirements to ensure it becomes a widely used product that is user centered and can make the fashion industry experience way better
         </p>
         <p>
           Going forward, Dress Measurement app will focus on expanding its product offering to further meet the needs of large scale fashion enterprises and agencies.

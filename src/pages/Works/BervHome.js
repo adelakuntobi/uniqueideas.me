@@ -313,5 +313,8 @@ export const UserPersona = styled.div`
     img{
       width: 100%;
     }
+    h6{
+      line-height: 38px;
+  }
    }	
 `;
