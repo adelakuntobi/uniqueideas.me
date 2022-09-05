@@ -67,9 +67,8 @@ export default function DressMeasurement() {
         </p>
         <p>
           <b>Product Offerings</b><br />
-          As a fashion entrepreneur, keep track of your customers’ measurements in one place, keep them organized and synced to the cloud and easily find your customer's measurement' with powerful search tools.
-          Share your measurements as PDF or CSV
-          Take notes and store photos specific to each profile.  This is synced to the cloud so no need to worry about losing your data.
+          As a fashion entrepreneur, keep track of your customers’ measurements in one place, keep them organized and synced to the cloud and find your customer's measurement' with powerful search tools.
+          Share your measurements as PDF or CSV, take notes and store photos specific to each profile.  This is synced to the cloud so no need to worry about losing your data.
         </p>
         {/* <p>
           Easily take down your measurements by sight of an avatar or by a name on our alphatized list view. Keep the pen and paper away
@@ -137,20 +136,17 @@ export default function DressMeasurement() {
       <DivWithHeading className=" !max-w-[61rem] !mr-0">
         <img src={Affinity} alt="" />
       </DivWithHeading>
-      <DivWithHeading>
-        <p>
-          My <span className='font-medium'>high level goals</span> were to uncover user’s experience on using the existing version that was live.
-        </p>
-        <p>
-          <span className="font-medium">The desire for personalization:</span> People want to be able to enter desired body measurements into the app and not necessarily stick to the default measurements made available on the app.
-        </p>
-        <p>
-          <span className="font-medium">Inefficient app performance:</span> Continuous barrier to complete tasks due to bugs that crash the app
-        </p>
-        <p>
-          <span className="font-medium">The need for clarity:</span> In general, users crave an interface that is intuitive, one that has an interface that is relatable and easy to use even on first interaction.
 
-        </p>
+      <DivWithHeading>
+        <MyRole>
+          <p>My role</p>
+          <ul>
+            <li> My <span className='font-medium'>high level goals</span> were to uncover user’s experience on using the existing version that was live.</li>
+            <li><span className="font-medium">The desire for personalization:</span> People want to be able to enter desired body measurements into the app and not necessarily stick to the default measurements made available on the app.</li>
+            <li><span className="font-medium">Inefficient app performance:</span> Continuous barrier to complete tasks due to bugs that crash the app</li>
+            <li> <span className="font-medium">The need for clarity:</span> In general, users crave an interface that is intuitive, one that has an interface that is relatable and easy to use even on first interaction.</li>
+          </ul>
+        </MyRole>
       </DivWithHeading>
 
       <DivWithHeading className=" !max-w-[61rem] !mr-0">
@@ -220,14 +216,14 @@ export default function DressMeasurement() {
           I aimed at creating designs that are human centered at every touchpoint. By utilizing simple avatars with closely stated guidelines, Dress Measurement App shaped up to become warm and user-friendly as intended
         </p>
         <img src={NewFeel} className="pt-10 pb-8" alt="" />
-       
+
       </DivWithHeading>
 
 
 
 
       <DivWithHeading>
-      <p className='font-medium !mb-2'>Key features introduced into the redesign include:</p>
+        <p className='font-medium !mb-2'>Key features introduced into the redesign include:</p>
         <h3 className='white'>Custom Pages and Measurement</h3>
         <p>
           This feature made it possible for users to create their own pages and personal measurements as they want. Users are allowed to add as many pages and measurements as they desire without limits.  </p>
@@ -262,7 +258,7 @@ export default function DressMeasurement() {
           I conducted my usability testing remotely over zoom, asking participants to share their screens and think aloud while I recorded their interaction on the prototype. I asked participants to place themselves in the following scenario:
         </p>
         <p>
-          I want you to imagine newly downloading the app. <br/>
+          I want you to imagine newly downloading the app. <br />
           <span className='text-2xl font-medium lg:text-3xl'>Create a profile, add custom measurements, add reference measurements, add notes and photos to the profile created.</span>
         </p>
       </DivWithHeading>
@@ -315,7 +311,7 @@ export default function DressMeasurement() {
 
       <DivWithHeading>
         <h3>Lessons and key takeaways</h3>
-        <p>I learned the value of digging deep into user’s frustrations and championing users needs to ensure so it meets all requirements to ensure it becomes a widely used product that is user centered and can make the fashion industry experience way better
+        <p>I learned the value of digging deep into user’s frustrations and championing users needs to ensure so it meets all requirements so it becomes a widely used product that is user centered and can make the fashion industry experience way better
         </p>
         <p>
           Going forward, Dress Measurement app will focus on expanding its product offering to further meet the needs of large scale fashion enterprises and agencies.
