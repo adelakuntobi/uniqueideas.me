@@ -273,10 +273,10 @@ export default function DressMeasurement() {
           After conducting my usability test, I created an affinity diagram with key insights, behaviors and findings. During the test, 100% of the participants completed the task in under 5 minutes. All participants complimented the general look and feel of the interface and concise presentation of guidelines
         </p>
         <img src={Notes} className="pt-10 pb-8" alt="" />
-        <p>
+        <p className='text-2xl font-medium lg:text-3xl'>
           The key insights derived from the usability test conducted include:
         </p>
-        <p>
+        <p className='text-2xl font-medium lg:text-3xl'>
           Users want more transparency with iCloud activities. Leaving the user clueless on its status makes them anxious and expectant.
         </p>
       </DivWithHeading>

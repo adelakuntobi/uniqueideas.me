@@ -86,7 +86,8 @@ export const DivWithHeading = styled.div`
    } 
   }
   @media (max-width: 1024px) { 
-
+    padding-top: 1rem;
+  padding-bottom: 1rem;
     h3{
       font-size: 1.45rem/* 20px */;
       line-height: 1.75rem;
