@@ -108,9 +108,9 @@ const Homepage = () => {
         <HeaderDiv className='flex-col gap-y-6 lg:flex-row justify-center lg:justify-between flex items-center '>
 
           <div className='lg:w-7/12'>
-            <p className='text-primary text-lg lg:text-2xl'>Hello, I'm <span className='font-bold uppercase'>Ify</span></p>
+            <p className='text-primary text-lg lg:text-2xl'>Hello, I'm <span className='font-bold uppercase'>Unique</span></p>
             <h1 className='ivy text-4xl lg:text-6xl font-bold !leading-tight tracking-wide mb-4'>
-              Designing {" "}
+              I Design {" "}
               <span id="type"></span>
               {" "} experiences for all.
             </h1>
