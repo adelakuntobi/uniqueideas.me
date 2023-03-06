@@ -9,33 +9,43 @@ export default function Experience() {
       <div className='w-full lg:w-1/2'>
         <TitleHeading>Experience</TitleHeading>
         <div>
-          <ExperienceDiv data-aos="fade-up-right" data-aos-delay="500">
+          <ExperienceDiv data-aos="fade-up-right" >
             <p>Aeeiee.inc, <span>February 2021 - today</span></p>
-            <p>User Experience Designer</p>
+            <p>UI/UX Designer</p>
+          </ExperienceDiv>
+          <ExperienceDiv data-aos="fade-up-right" data-aos-delay="500" >
+            <p>Crownswap, <span>September 2020 - February 2021</span></p>
+            <p>UI/UX Designer</p>
           </ExperienceDiv>
           <ExperienceDiv data-aos="fade-up-right" data-aos-delay="1000" >
-            <p>Crownswap, <span>September 2020 - February 2021</span></p>
-            <p>User Experience Designer - Contract</p>
+            <p>Liquid Driver, <span>August 2020- December 2020</span></p>
+            <p>User Interface Designer</p>
           </ExperienceDiv>
           <ExperienceDiv data-aos="fade-up-right" data-aos-delay="1500" >
             <p>HNGi7, <span>May 2020 - August 2020</span></p>
-            <p>User Experience Intern</p>
+            <p>UI/UX Intern (Finalist)</p>
           </ExperienceDiv>
-          <ExperienceDiv data-aos="fade-up-right" data-aos-delay="2000" >
+          {/* <ExperienceDiv data-aos="fade-up-right" data-aos-delay="2000" >
             <p>Innovation Growth Hub, <span>Dec 2019 - March 2020</span></p>
             <p>User Experience Intern</p>
+          </ExperienceDiv> */}
+          <ExperienceDiv data-aos="fade-up-right" data-aos-delay="2000" >
+            <p>Infusion Lawyers, <span>August 2018 - June 2020</span></p>
+            <p>Brand Designer</p>
           </ExperienceDiv>
         </div>
       </div>
       <div className='w-full lg:w-1/2'>
         <TitleHeading>Skills</TitleHeading>
         <Skills>
-          <li  data-aos="fade-up-left" >Visual Design</li>
-          <li data-aos="fade-up-left" data-aos-delay="500">Interface Design</li>
-          <li data-aos="fade-up-left" data-aos-delay="750">User Experience Design</li>
-          <li data-aos="fade-up-left" data-aos-delay="1000">User Research</li>
-          <li data-aos="fade-up-left" data-aos-delay="1250">Usability Testing</li>
-          <li data-aos="fade-up-left" data-aos-delay="1500">Product Strategy </li>
+          <li  data-aos="fade-up-left">Visual Design</li>
+          <li data-aos="fade-up-left" data-aos-delay="500">User Experience Design</li>
+          <li data-aos="fade-up-left" data-aos-delay="750">Interaction Design</li>
+          <li data-aos="fade-up-left" data-aos-delay="1000">Product Strategy </li>
+          <li data-aos="fade-up-left" data-aos-delay="1250">User Research</li>
+          <li data-aos="fade-up-left" data-aos-delay="1500">Brand Design</li>
+          <li data-aos="fade-up-left" data-aos-delay="1750">Usability Testing</li>
+          <li data-aos="fade-up-left" data-aos-delay="2000">Motion Graphics</li>
         </Skills>
       </div>
 
